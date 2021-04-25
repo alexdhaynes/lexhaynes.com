@@ -5,7 +5,6 @@ import Label from '@components/Label'
 
 /* just an image and a label in vertical alignment */
 const LabelledBlock = ({image, label}) => {
-    console.log("lb block image ", image);
     return (
         <div className="sm:w-60 mx-2 flex flex-col items-center">
 

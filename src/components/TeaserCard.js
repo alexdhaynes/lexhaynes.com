@@ -2,7 +2,6 @@
 import Icon from '@components/Icon'
 
 const TeaserCard = ({name, href, image, tags}) => {
-    console.log("tcard image ", image);
     return (
         <a className="block" title={name} href={href} target="_blank" rel="noreferrer">
         <div className=" w-full mb-4 space-y-3 mx-auto bg-white table">
