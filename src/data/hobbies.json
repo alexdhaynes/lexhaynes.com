@@ -1,0 +1,32 @@
+[
+    {
+        "label": "Learning Pali",
+        "desc": "I’m currently learning Pali, the ancient written language of the Theravada Buddhist texts",
+        "image": "/images/svgs/pali.svg"
+    },
+    {
+        "label": "First Veggie Garden",
+        "desc": "I’m working on my first ever vegetable garden! I’m planting pumpkin, radish, beet, and okra, among others.",
+        "image": "/images/svgs/veggies.svg"
+    },
+    {
+        "label": "Practicing French",
+        "desc": "I majored in French Language & Literature in college, and the French language is still one of my favorites!",
+        "image": "/images/svgs/french.svg"
+    },
+    {
+        "label": "Crochet & Embroidery",
+        "desc": "I have been crocheting since I was 8 years old. You’d think I’d be better at it… I’m also learning how to embroider!",
+        "image": "/images/svgs/crochet.svg"
+    },
+    {
+        "label": "Pastel & Charcoal Drawing",
+        "desc": "Charcoal and pastel are my favorite physical media to work with!",
+        "image": "/images/svgs/pastel.svg"
+    },
+    {
+        "label": "Yoga & Meditation",
+        "desc": "I am certified to teach Restorative Yoga! I practice yoga, meditation, and mindfulness daily.",
+        "image": "/images/svgs/yoga.svg"
+    }
+]

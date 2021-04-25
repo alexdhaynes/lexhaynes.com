@@ -1,0 +1,19 @@
+[
+    {
+        "label":"Sustainable living",
+        "image": "/images/svgs/sustainable.svg"
+    },
+    {
+        "label":"Climate Change action",
+        "image": "/images/svgs/climate.svg"
+    },
+
+    {
+        "label":"Nonviolence towards all living beings",
+        "image": "/images/svgs/buddha.svg"
+    },
+    {
+        "label":"Anti-Racism & Anti-Misogyny",
+        "image": "/images/svgs/blackfeminism.svg"
+    }
+]

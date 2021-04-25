@@ -1,0 +1,19 @@
+[
+    {
+        "label":"Clean code",
+        "image":"/images/svgs/clean-code.svg"
+    },
+    {
+        "label":"Accessible content",
+        "image":"/images/svgs/accessible.svg"
+    },
+
+    {
+        "label":"Meaningful interactivity",
+        "image":"/images/svgs/interactive.svg"
+    },
+    {
+        "label":"Mobile-first philosophy",
+        "image":"/images/svgs/mobile-first.svg"
+    }
+]

@@ -1,0 +1,134 @@
+[
+    {
+        "name": "Augmented Reality Prototype",
+        "href": "https://ar-mardi-gras-mask.netlify.app/",
+        "image":"/images/bitmaps/ar-mask.jpg",
+        "tags": ["AR", "camera"]
+    },
+    {
+        "name": "360 Viewer with Hotspots",
+        "href": "https://bit.ly/2ItHEnT",
+        "image":"/images/bitmaps/hotspot-360.jpg",
+        "tags": ["360", "hotspots"]
+    },
+    {
+        "name": "Audible - Audiobook Player - Desktop Only",
+        "href": "https://bit.ly/39xwpXg",
+        "image":"/images/bitmaps/audible.jpg",
+        "tags": ["audio"]
+    },
+    {
+        "name": "Explore Photo Filters",
+        "href": "https://bit.ly/2Q0PY2v",
+        "image":"/images/bitmaps/photo-filter.jpg",
+        "tags": ["camera"]
+    },
+    {
+        "name": "Sephora - Beauty Drag & Drop",
+        "href": "https://bit.ly/2W1z5bJ",
+        "image":"/images/bitmaps/sephora.jpg",
+        "tags": ["interaction"]
+    },
+    {
+        "name": "Health Facility Locator",
+        "href": "https://bit.ly/2PXvqbi",
+        "image":"/images/bitmaps/doctor-locator.jpg",
+        "tags": ["map", "data"]
+    },
+    {
+        "name": "Holiday Game Collection",
+        "href": "https://everly-jamboree-438f3e.netlify.com/",
+        "image":"/images/bitmaps/fl-lotto.jpg",
+        "tags": ["game", "holiday"]
+    },
+    {
+        "name": "Audi - Vehicle Customized",
+        "href": "https://bit.ly/2vUj8cC",
+        "image":"/images/bitmaps/audi.jpg",
+        "tags": ["interaction"]
+    },
+    {
+        "name": "Sous Vide Product Animation",
+        "href": "https://bit.ly/2VWsPSH",
+        "image":"/images/bitmaps/sous-vide.jpg",
+        "tags": ["animation"]
+    },
+    {
+        "name": "Three of a kind game",
+        "href": "https://bit.ly/3aGCBMG",
+        "image":"/images/bitmaps/three-of-a-kind.jpg",
+        "tags": ["game"]
+    },
+    {
+        "name": "Matching Game",
+        "href": "https://bit.ly/2vTwiGR",
+        "image":"/images/bitmaps/ky-lotto.jpg",
+        "tags": ["game"]
+    },
+    {
+        "name": "Tap to collect game",
+        "href": "https://bit.ly/3aH5VCY",
+        "image":"/images/bitmaps/collect-win.png",
+        "tags": ["game"]
+    },
+    {
+        "name": "Travel Oregon - SkiFree Copycat Game",
+        "href": "https://bit.ly/332h4vv",
+        "image":"/images/bitmaps/travel-oregon.png",
+        "tags": ["game"]
+    },
+    {
+        "name": "Welch's - Hotspot Animation 1",
+        "href": "https://bit.ly/2vIgoPP",
+        "image":"/images/bitmaps/welchs1.jpg",
+        "tags": ["hotspots"]
+    },
+    {
+        "name": "Welch's - Hotspot Animation 2",
+        "href": "https://bit.ly/3cM2e0m",
+        "image":"/images/bitmaps/welchs2.jpg",
+        "tags": ["hotspots"]
+    },
+    {
+        "name": "Chinet - Holiday hotspots",
+        "href": "https://bit.ly/2IzyNkx",
+        "image":"/images/bitmaps/chinet.jpg",
+        "tags": ["hotspots"]
+    },
+    {
+        "name": "Brooks Brothers - Holiday gift gude",
+        "href": "https://bit.ly/3cJRhN2",
+        "image":"/images/bitmaps/brooks-brothers.jpg",
+        "tags": ["shopping"]
+    },
+    {
+        "name": "Land's End - Holiday micro-shop",
+        "href": "https://bit.ly/2vaml7K",
+        "image":"/images/bitmaps/lands-end.jpg",
+        "tags": ["shopping"]
+    },
+    {
+        "name": "Brooks Brothers - Holiday twinkling stars",
+        "href": "https://bit.ly/332ddyx",
+        "image":"/images/bitmaps/black-friday.jpg",
+        "tags": ["fun"]
+    },
+    {
+        "name": "Estée Lauder - Text-only Event promo",
+        "href": "https://bit.ly/3aGFrkO",
+        "image":"/images/bitmaps/estee-lauder.png",
+        "tags": ["promo", "text-based"]
+    },
+    {
+        "name": "Very Popular FPS Game - Conference promo with endframe hotspots",
+        "href": "https://bit.ly/2W8ZlkL",
+        "image":"/images/bitmaps/halo.jpg",
+        "tags": ["promo", "hotspots"]
+    },
+    {
+        "name": "Happy hour promo",
+        "href": "https://bit.ly/2v741wh",
+        "image":"/images/bitmaps/happy-hour.jpg",
+        "tags": ["promo", "animation"]
+    }
+]

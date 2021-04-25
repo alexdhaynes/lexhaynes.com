@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="371px" height="239px" viewBox="0 0 371 239" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#FCF8EB" x="-26" y="-22" width="529" height="304" rx="8"></rect>
+        <g id="blob-(4)" transform="translate(114.000000, 41.000000)" fill-rule="nonzero">
+            <path d="M137.3,7.9 C146.8,14.3 146.2,35 147.7,52 C149.3,69.1 153.1,82.6 148.7,92.6 C144.3,102.6 131.9,109.2 120.6,122.1 C109.2,135 99.1,154.1 84.6,160.2 C70,166.3 51,159.3 40.4,146.3 C29.7,133.2 27.3,114 21.1,95.9 C15,77.7 5.2,60.7 7.2,45.2 C9.2,29.8 23,16 38.6,11.6 C54.2,7.3 71.6,12.3 90,10.9 C108.5,9.4 127.9,1.6 137.3,7.9 Z" id="Path" fill="#F2EEE5"></path>
+            <path d="M131.3,2.9 C140.8,9.3 140.2,30 141.7,47 C143.3,64.1 147.1,77.6 142.7,87.6 C138.3,97.6 125.9,104.2 114.6,117.1 C103.2,130 93.1,149.1 78.6,155.2 C64,161.3 45,154.3 34.4,141.3 C23.7,128.2 21.3,109 15.1,90.9 C9,72.7 -0.8,55.7 1.2,40.2 C3.2,24.8 17,11 32.6,6.6 C48.2,2.3 65.6,7.3 84,5.9 C102.5,4.4 121.9,-3.4 131.3,2.9 Z" id="Path" fill="#FFFFFF"></path>
+        </g>
+        <ellipse id="Oval" fill="#F8B338" cx="186" cy="111.5" rx="32" ry="26.5"></ellipse>
+        <ellipse id="Oval" fill="#FFFFFF" cx="177" cy="97.5" rx="8" ry="5.5"></ellipse>
+        <path d="M145.432783,153.159442 C147.209371,177.792668 161.992161,186.83735 185.15321,186.83735" id="Path-2" stroke="#F9F5F5" stroke-width="6"></path>
+    </g>
+</svg>
