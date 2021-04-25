@@ -1,7 +1,7 @@
 
 import AppShell from '@components/AppShell'
 import NavBar from '@components/NavBar'
-import Link from 'next/Link'
+import Link from 'next/link'
 import { Section, SectionHero } from '@components/Section'
 import { LabelledBlock, DescriptiveBlock } from '@components/StatementBlock'
 import SectionHeader from '@components/SectionHeader'
