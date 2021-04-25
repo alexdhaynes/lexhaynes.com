@@ -3,15 +3,15 @@
         "title": "HTML",
         "list": [
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "Accessibility"
             },
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "Semantic HTML"
             },
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "SVG Animation"
             }
         ]
@@ -20,19 +20,19 @@
         "title": "CSS",
         "list": [
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "SASS"
             },
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "Tailwind"
             },
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "Bootstrap"
             },
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "Bulma"
             }
         ]
@@ -41,19 +41,19 @@
         "title": "Javascript",
         "list": [
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "React / React Native"
             },
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "NodeJS"
             },
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "NextJS / Gatsby"
             },
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "GSAP (Greensock)"
             }
         ]
@@ -62,19 +62,19 @@
         "title": "Back-End",
         "list": [
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "MongoDB / SQL"
             },
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "Node / ExpressJS"
             },
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "PHP"
             },
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "Python"
             }
         ]
@@ -83,19 +83,19 @@
         "title": "Content Management Systems",
         "list": [
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "Wordpress"
             },
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "Netlify CMS"
             },
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "Drupal"
             },
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "Jekyll / Ghost / Hugo"
             }
         ]
@@ -104,15 +104,15 @@
         "title": "Design Tools",
         "list": [
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "Photoshop"
             },
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "Illustrator"
             },
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "Sketch"
             }
         ]
@@ -121,15 +121,15 @@
         "title": "Utilities",
         "list": [
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "Git / Bitbucket"
             },
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "Terminal"
             },
             {
-                "image": "/images/svgs/yoga.svg",
+                "image": "/images/svgs/loading.svg",
                 "label": "Scrapy"
             }
         ]
