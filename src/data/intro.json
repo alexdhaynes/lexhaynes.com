@@ -1,19 +1,19 @@
 [
     {
         "label":"Clean code",
-        "image":"/images/svgs/clean-code.svg"
+        "image":"/images/pngs/clean-code.png"
     },
     {
         "label":"Accessible content",
-        "image":"/images/svgs/accessible.svg"
+        "image":"/images/pngs/accessible.png"
     },
 
     {
         "label":"Meaningful interactivity",
-        "image":"/images/svgs/interactive.svg"
+        "image":"/images/pngs/interactive.png"
     },
     {
         "label":"Mobile-first philosophy",
-        "image":"/images/svgs/mobile-first.svg"
+        "image":"/images/pngs/mobile-first.png"
     }
 ]
