@@ -4,8 +4,6 @@ import styles from '@styles/Icon.module.css'
 
 const Icon = ({src, alt}) => {
     const [loaded, setLoaded ] = useState(false)
-
-    const loadingImg = '/images/svgs/loading.svg';
     
     const onLoadCallback = () => {
         setLoaded(true);
@@ -13,7 +11,7 @@ const Icon = ({src, alt}) => {
 
     return (
         <Image className={`image ${loaded ? '' : styles.bg}`}
-            
+            onLoad={onLoadCallback} 
             src={src}
             alt={alt}
             layout="fill"
