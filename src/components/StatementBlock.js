@@ -25,7 +25,6 @@ const LabelledBlock = ({image, label}) => {
 
 /* image + title and descrition in  horizontal alignment */
 const DescriptiveBlock = ({image, label, children}) => {
-    console.log("ds block image ", image);
 
     return (
     <div className="my-6 sm:my-4 flex flex-col sm:flex-row justify-around items-center">
