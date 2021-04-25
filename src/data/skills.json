@@ -3,15 +3,15 @@
         "title": "HTML",
         "list": [
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "Accessibility"
             },
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "Semantic HTML"
             },
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "SVG Animation"
             }
         ]
@@ -20,19 +20,19 @@
         "title": "CSS",
         "list": [
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "SASS"
             },
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "Tailwind"
             },
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "Bootstrap"
             },
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "Bulma"
             }
         ]
@@ -41,19 +41,19 @@
         "title": "Javascript",
         "list": [
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "React / React Native"
             },
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "NodeJS"
             },
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "NextJS / Gatsby"
             },
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "GSAP (Greensock)"
             }
         ]
@@ -62,19 +62,19 @@
         "title": "Back-End",
         "list": [
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "MongoDB / SQL"
             },
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "Node / ExpressJS"
             },
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "PHP"
             },
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "Python"
             }
         ]
@@ -83,19 +83,19 @@
         "title": "Content Management Systems",
         "list": [
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "Wordpress"
             },
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "Netlify CMS"
             },
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "Drupal"
             },
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "Jekyll / Ghost / Hugo"
             }
         ]
@@ -104,15 +104,15 @@
         "title": "Design Tools",
         "list": [
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "Photoshop"
             },
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "Illustrator"
             },
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "Sketch"
             }
         ]
@@ -121,15 +121,15 @@
         "title": "Utilities",
         "list": [
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "Git / Bitbucket"
             },
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "Terminal"
             },
             {
-                "image": "/images/svgs/loading.svg",
+                "image": "/images/pngs/loading.png",
                 "label": "Scrapy"
             }
         ]

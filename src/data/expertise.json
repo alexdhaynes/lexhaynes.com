@@ -2,25 +2,25 @@
     {
         "label": "Web Development",
         "desc": "I build pixel-perfect, responsive websites from PSDs, Sketch files, or napkin doodles!",
-        "image": "/images/svgs/web-dev.svg",
+        "image": "/images/pngs/web-dev.png",
         "alt": "Web dev"
     },
     {
         "label": "UI Design",
         "desc": "I create a beautiful, thoughtfully designed user interfaces for complex data",
-        "image": "/images/svgs/ui-design.svg",
+        "image": "/images/pngs/ui-design.png",
         "alt": "UI design"
     },
     {
         "label": "Web Animation",
         "desc": "I build complex animations using Javascript, CSS, and SVG",
-        "image": "/images/svgs/animation.svg",
+        "image": "/images/pngs/animation.png",
         "alt": "web animation"
     },
     {
         "label": "App Development",
         "desc": "I build web and mobile apps that look great on every device",
-        "image": "/images/svgs/app-dev.svg",
+        "image": "/images/pngs/app-dev.png",
         "alt": "app dev"
     }
 
