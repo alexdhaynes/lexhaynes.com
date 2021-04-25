@@ -13,7 +13,7 @@ const Icon = ({src, alt}) => {
 
     return (
         <Image className={`image ${loaded ? '' : styles.bg}`}
-            onLoad={onLoadCallback} 
+            
             src={src}
             alt={alt}
             layout="fill"
