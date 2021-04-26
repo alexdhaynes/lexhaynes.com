@@ -16,24 +16,65 @@ const Input = ({type, placeholder}) => {
     )
 }
 
+async function postData(url = '', data = {}) {
+    const response = await fetch(url, {
+      method: 'POST', 
+      cache: 'no-cache',
+      credentials: 'same-origin',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      redirect: 'follow', 
+      referrerPolicy: 'no-referrer',
+      body: JSON.stringify(data)
+    });
+    return response.json(); // parses JSON response into native JavaScript objects
+  }
+
+
+const DynamicEmail = () => {
+    postData('/api/sendEmail', { 
+        name: "name",
+        email: "email",
+        subj: "subj",
+        msg: "msg",
+    })
+    .then((response) => {
+        console.log("RESPONSE ", response)
+    },
+    (error) => {
+        console.log("ERROR FROM API: ", error)
+        }
+    )
+  
+    return <div className="border border-gray-700 w-1/3">
+        sending...
+    </div>
+  }
+
+
 const Form = () => {
     const [showWarning, setShowWarning] = useState(false)
     const [formVisible, setFormVisible ] = useState(true);
+    const [sendBtnClicked, setSendBtnClicked] = useState(false)
     const [name, setName] = useState();
     const [email, setEmail] = useState();
     const [subj, setSubj] = useState();
     const [msg, setMsg] = useState();
     const [formIsValid, setFormIsValid] = useState(false);
 
+   
+
     const handleFormInput = (e, type) => {
         //
     }
 
     const sendEmail = () => {
+        setSendBtnClicked(true);
 
-            window.setTimeout(() => {
-                setFormVisible(!formVisible);
-            }, 150)
+        window.setTimeout(() => {
+            setFormVisible(!formVisible);
+        }, 150)
     
     }
     
@@ -83,6 +124,11 @@ const Form = () => {
                     </div>
                     
                 </Row>
+
+                {
+                    sendBtnClicked && <DynamicEmail />
+                }
+                
             
             </div>
     )
