@@ -22,7 +22,7 @@ const Footer = () => {
                 </div>
 
                 <div className="flex align-center justify-center mt-6">
-                    <p>Copyright &copy; {currentYear} Alexandra Haynes</p>
+                    <p>Copyright &copy; {currentYear} | Alexandra Haynes</p>
                 </div>
                 
             </div>

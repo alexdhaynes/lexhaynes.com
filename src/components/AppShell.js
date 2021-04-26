@@ -1,8 +1,9 @@
 
 import Head from 'next/head'
-
 import Footer from '@components/Footer'
+
 import '@styles/AppShell.module.css'
+
 
 const AppShell = ({title, children}) => {
     return (
