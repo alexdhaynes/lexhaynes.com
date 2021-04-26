@@ -1,13 +1,8 @@
 # TODOS.md
 
-## Find images for:
+## FEATURES TO ADD:
+NB: don't forget to pull in new changes
 
- 
-all toolkit icons
-
-## PORTFOLIO SECTION
- - add color to tags
-
-## QA
-- check on phone
-  
+- scroll to top button
+- animated scroll when scrolling to same-page anchor
+- email form functionality
