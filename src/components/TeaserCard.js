@@ -9,7 +9,7 @@ const TeaserCard = ({name, href, image, tags}) => {
             <div className="relative mx-auto overflow-hidden rounded-lg shadow-lg
                 w-3/4 h-36  
                 md:w-60 md:h-32
-                lg:w-80 lg:h-44
+                lg:w-72 lg:h-40
                 ">
                 <Icon   
                     src={image}
