@@ -28,9 +28,9 @@ export default function handler(req, res) {
         // send email
         try {
             sendEmail(firstName, lastName, email, subject, message);
-            res.status(200).json({msg: "success"})
+            //res.status(200).json({msg: "success"})
         } catch (err) {
-            res.status(400).json(err)
+           // res.status(400).json(err)
         }
     } 
 }
