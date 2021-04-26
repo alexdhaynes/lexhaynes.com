@@ -8,7 +8,7 @@ import socialData from '@data/social.json'
 
 async function postData(url = '', data = {}) {
     const response = await fetch(url, {
-      method: 'POST', 
+      method: 'GET', 
       cache: 'no-cache',
       credentials: 'same-origin',
       headers: {
@@ -25,6 +25,8 @@ async function postData(url = '', data = {}) {
 const SubmitEmail = ({formValues}) => {
     const [sent, setSent] = useState()
     const { firstName, lastName, email, subject, message } = formValues;
+
+    console.log("lets try getting data instead of post");
 
     postData('/api/sendEmail', { 
         firstName,
