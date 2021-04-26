@@ -1,5 +1,6 @@
 
 import Head from 'next/head'
+import NavBar from '@components/NavBar'
 import Footer from '@components/Footer'
 
 import '@styles/AppShell.module.css'
@@ -14,6 +15,8 @@ const AppShell = ({title, children}) => {
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Sen:wght@400;700&display=swap" rel="stylesheet" />        
             </Head>
+
+            <NavBar />
           
             {children}
 

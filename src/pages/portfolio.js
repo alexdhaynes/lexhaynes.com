@@ -17,11 +17,8 @@ const Portfolio = () => {
         <AppShell title="Alexandra Haynes: Web Developer">
 
             <SectionHero>
-                <div className="pt-3 pb-10">
-                    <NavBar />
-                </div>
             
-                <div className="container">
+                <div className="container pt-10">
                         <h1 className="font-bold text-5xl section-header">All Projects</h1>
                         
                     </div>

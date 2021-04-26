@@ -27,11 +27,8 @@ const Home = () => {
         <AppShell title="Alexandra Haynes: Web Developer">
 
             <SectionHero>
-                <div className="pt-3 pb-10">
-                    <NavBar />
-                </div>
             
-                <div className="md:w-3/4 lg:w-1/2 mx-auto flex flex-col items-center sm:flex-row sm:justify-between">
+                <div className="md:w-3/4 lg:w-1/2 mx-auto flex flex-col items-center sm:flex-row sm:justify-between pt-10">
                     <div className="w-2/3">
                         <h1 className="text-center sm:text-left font-bold text-3xl sm:text-5xl section-header">Hi, I'm Alex</h1>
                         <h2 className="text-center sm:text-left font-bold text-xl sm:text-3xl mt-3">Front-End Developer</h2>
@@ -60,7 +57,7 @@ const Home = () => {
                 
             </SectionHero>
                         
-                <Section bgInner="white">
+                <Section bgInner="white" id="intro">
                     <SectionHeader>At the Intersection of Design & Development</SectionHeader>
                     <div className="space-y-4 sm:flex sm:space-y-0">
                     {

@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 import navData from '@data/nav.json'
 import Button from '@components/Button'
 import { MenuIcon, XIcon } from '@heroicons/react/solid'
 import useComponentVisible from '../hooks/useComponentVisible';
+import { useScrollData } from "scroll-data-hook";
 
 
 const navLinks = navData.filter(item => item.id !== "contact");
@@ -27,18 +28,34 @@ const MenuDropDown = ({links}) => {
 }
 
 const NavBar = () => {
+  const scrollPosY = useScrollData().position.y
+  const [heroSectionHeight, setHeroSectionHeight] = useState(0);
+  const [navbarHeight, setNavbarHeight] = useState(0);
   
   const { ref, isComponentVisible, setIsComponentVisible } = useComponentVisible(false);
 
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const heroSection = document.getElementById('hero');
+    const heroHeight = heroSection.offsetHeight;
+    const navHeight = navRef.current.clientHeight;
+
+    console.log("NAV HEIGHT ", navHeight);
+
+    setHeroSectionHeight(heroHeight)
+    setNavbarHeight(navHeight)
+  })
+
+
+
   const toggleMenu = () => setIsComponentVisible(!isComponentVisible)
 
-
-  const contactLink = '/#contact'
-
+ 
   return (
-  <header>
-      <nav className="navbar" role="navigation" aria-label="main navigation">
-        <div className="container flex justify-between items-center mt-3">
+  <header className={`navbar w-full sticky top-0 z-50  ${scrollPosY > navbarHeight && scrollPosY < heroSectionHeight ? 'bg-yellow-100 opacity-95' : ''} transition duration-150 ${scrollPosY > heroSectionHeight ? 'bg-white shadow-lg' : ''}`} ref={navRef}>
+      <nav role="navigation" className="w-11/12 py-3 mx-auto" aria-label="main navigation">
+        <div className="container flex justify-between items-center">
 
           <div className="navbar-left flex justify-between items-center">
             <div className="brand font-bold text-2xl">
@@ -59,7 +76,7 @@ const NavBar = () => {
 
           <div className="navbar-right flex justify-end">
               
-               <Link href={contactLink} passHref>
+               <Link href='/#contact' passHref>
                 <div className="hidden lg:block">
                   <Button variant="link">Get in Touch</Button>
                 </div>
@@ -77,8 +94,8 @@ const NavBar = () => {
               }
           </div>  
         </div>
-        <div className={`lg:hidden container flex z-10
-              justify-center sm:justify-end h-10
+        <div className={`h-0 lg:hidden container flex z-10
+              justify-center sm:justify-end
               transition-opacity duration-100 opacity-0 ${isComponentVisible && 'opacity-100'}
               `} ref={ref}>
                   { //dropdown

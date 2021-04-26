@@ -11,12 +11,8 @@
     font-family:Sen, Inter, sans-serif;
 }
 
-html {
-    overflow-x:hidden;
-}
 
 body {
-    overflow-x:hidden;
     @apply serif;
 }
 
