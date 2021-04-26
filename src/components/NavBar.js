@@ -41,8 +41,6 @@ const NavBar = () => {
     const heroHeight = heroSection.offsetHeight;
     const navHeight = navRef.current.clientHeight;
 
-    console.log("NAV HEIGHT ", navHeight);
-
     setHeroSectionHeight(heroHeight)
     setNavbarHeight(navHeight)
   })

@@ -169,7 +169,7 @@ return (
                     type="textarea"
                 />
 
-                <p className="mt-10">
+                <p className="mt-10 flex justify-center">
                     <Button type="submit">Submit</Button>
                 </p>
          
