@@ -4,10 +4,10 @@ import Icon from '@components/Icon'
 const TeaserCard = ({name, href, image, tags}) => {
     return (
         <a className="block transform hover:scale-110 transition-transform" title={name} href={href} target="_blank" rel="noreferrer">
-        <div className=" w-full mb-4 space-y-3 mx-auto bg-white table">
+        <div className=" w-full mb-8 md:mb-4 space-y-3 mx-auto bg-white table">
         
             <div className="relative mx-auto overflow-hidden rounded-lg shadow-lg
-                w-80 h-44 
+                w-3/4 h-36  
                 md:w-60 md:h-32
                 lg:w-80 lg:h-44
                 ">
