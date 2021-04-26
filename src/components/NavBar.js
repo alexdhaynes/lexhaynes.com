@@ -51,7 +51,7 @@ const NavBar = () => {
 
  
   return (
-  <header className={`navbar w-full sticky top-0 z-50  ${scrollPosY > navbarHeight && scrollPosY < heroSectionHeight ? 'bg-yellow-100 opacity-95' : ''} transition duration-150 ${scrollPosY > heroSectionHeight ? 'bg-white shadow-lg' : ''}`} ref={navRef}>
+  <header className={`navbar w-full py-2 sticky top-0 z-50  ${scrollPosY > navbarHeight && scrollPosY < heroSectionHeight ? 'bg-yellow-100 opacity-95' : ''} transition duration-150 ${scrollPosY > heroSectionHeight ? 'bg-white shadow-lg' : ''}`} ref={navRef}>
       <nav role="navigation" className="w-11/12 py-3 mx-auto" aria-label="main navigation">
         <div className="container flex justify-between items-center">
 
