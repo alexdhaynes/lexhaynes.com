@@ -38,7 +38,7 @@ const NavBar = () => {
   return (
   <header>
       <nav className="navbar" role="navigation" aria-label="main navigation">
-        <div className="container flex justify-between items-center">
+        <div className="container flex justify-between items-center mt-3">
 
           <div className="navbar-left flex justify-between items-center">
             <div className="brand font-bold text-2xl">
