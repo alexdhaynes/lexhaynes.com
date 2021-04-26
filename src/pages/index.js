@@ -43,7 +43,7 @@ const Home = () => {
                         <div className="mt-2 w-32 flex justify-between">
                         {
                             socialData.map((item, i) => (
-                                <a key={`social-${i}`} className="underline text-semibold" href={item.href} title={item.name} target="_blank" rel="noreferrer">{item.name}</a>
+                                <a key={`social-${i}`} className="underline hover:text-gray-500 text-semibold mr-6" href={item.href} title={item.name} target="_blank" rel="noreferrer">{item.name}</a>
                             ))
                         }
                         </div>
@@ -74,9 +74,10 @@ const Home = () => {
                     }
                     </div>
 
-                    <p className="sm:w-2/3 mx-auto">
-                    I’m a Front-End Developer with a strong eye for <strong>design</strong>. I work at the <strong>intersection</strong> between <strong>design & development</strong>. I take designs and bring them faithfully to life with <strong>code</strong>. I also design and build beautiful <strong>websites, interfaces, and interactions</strong>.
-                    </p>
+                    <div className="sm:w-2/3 mx-auto">
+                    <p>I’m a Front-End Developer with a strong eye for <strong>design</strong>. I work at the <strong>intersection</strong> between <strong>design & development</strong>. I take designs and bring them faithfully to life with <strong>code</strong>.</p>
+                    <p className="mt-2">As a long-time hobby artist and art history nerd, I have a well-developed eye for design. I design and build beautiful <strong>websites, UI, and interactions</strong>.</p>
+                    </div>
                 </Section>
       
 

@@ -1,7 +1,7 @@
 [
     {
         "label": "Learning Pali",
-        "desc": "I’m currently learning Pali, the ancient written language of the Theravada Buddhist texts",
+        "desc": "I'm a linguistics nerd and bygone student of Latin who will happily spend hours producing a translation of a dead language. I’m currently learning Pali, the ancient written language of the Theravada Buddhist texts",
         "image": "/images/svgs/pali.svg"
     },
     {
@@ -11,22 +11,22 @@
     },
     {
         "label": "Practicing French",
-        "desc": "I majored in French Language & Literature in college, and the French language is still one of my favorites!",
+        "desc": "I majored in French Language & Literature in college, and the French language is still one of my favorites. I spent a year studying in Paris and eating cheese. I hope to visit the Lascaux caves one of these days.",
         "image": "/images/svgs/french.svg"
     },
     {
         "label": "Crochet & Embroidery",
-        "desc": "I have been crocheting since I was 8 years old. You’d think I’d be better at it… I’m also learning how to embroider!",
+        "desc": "I have been crocheting since I was 8 years old. You’d think I’d be better at it… I’m also learning how to embroider! I'm a big fan yarns that are recycled or sustainably and ethically produced.",
         "image": "/images/svgs/crochet.svg"
     },
     {
         "label": "Pastel & Charcoal Drawing",
-        "desc": "Charcoal and pastel are my favorite physical media to work with!",
+        "desc": "I love the way charcoal and pastel feel. Tactile media are a true delight to work with.",
         "image": "/images/svgs/pastel.svg"
     },
     {
         "label": "Yoga & Meditation",
-        "desc": "I am certified to teach Restorative Yoga! I practice yoga, meditation, and mindfulness daily.",
+        "desc": "I am certified to teach Restorative Yoga. I practice yoga, meditation, and mindfulness daily.",
         "image": "/images/svgs/yoga.svg"
     }
 ]
