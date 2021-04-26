@@ -40,6 +40,7 @@ const SubmitEmail = ({formValues}) => {
     (error) => {
         setSent("error");
         console.log("error: ", error);
+        console.log("error code: ", error.status);
     })
 
     if (sent === "success") {
