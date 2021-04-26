@@ -1,19 +1,9 @@
-.serif {
-    font-family: Merriweather, Garamond, serif;
-}
 
-.sans-serif {
-    font-family:Sen, Inter, sans-serif;
-}
 
 /* html, body {
     overflow-x:hidden;
     @apply sans-serif text-gray-800;
     
 } */
-
-.section-header {
-    @apply serif
-}
 
 

@@ -74,7 +74,7 @@ const Home = () => {
                     }
                     </div>
 
-                    <p className="sm:w-2/3 mx-auto serif">
+                    <p className="sm:w-2/3 mx-auto">
                     I’m a Front-End Developer with a strong eye for <strong>design</strong>. I work at the <strong>intersection</strong> between <strong>design & development</strong>. I take designs and bring them faithfully to life with <strong>code</strong>. I also design and build beautiful <strong>websites, interfaces, and interactions</strong>.
                     </p>
                 </Section>
@@ -166,7 +166,7 @@ const Home = () => {
                     ))
                 }
                 </div>
-                <p className="sm:w-2/3 mx-auto serif">
+                <p className="sm:w-2/3 mx-auto">
                 I’m passionate about living in a way that <strong>does no harm to living beings</strong>, and <strong>does no harm to the environment</strong>. I actively work on reducing my use of plastics and household energy. I try to always choose local, organic foods that were grown in a sustainable manner. I practice compassion for all living beings.
                 </p>
 

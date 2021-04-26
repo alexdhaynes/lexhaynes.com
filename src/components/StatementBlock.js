@@ -40,7 +40,7 @@ const DescriptiveBlock = ({image, label, children}) => {
 
         <div className="ml-4 my-2 text-center sm:w-3/4 sm:text-left">
             <Label>{label}</Label>
-            <p className="serif">{children}</p>
+            <p>{children}</p>
         </div>
         
         

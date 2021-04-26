@@ -3,9 +3,20 @@
 @tailwind utilities;
 
 
-body {
-    overflow-x:hidden;
+.serif {
+    font-family: Merriweather, Garamond, serif;
 }
+
+.sans-serif {
+    font-family:Sen, Inter, sans-serif;
+}
+
 html {
     overflow-x:hidden;
 }
+
+body {
+    overflow-x:hidden;
+    @apply serif;
+}
+

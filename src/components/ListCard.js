@@ -19,7 +19,7 @@ const ItemList = ({list}) => {
                     </span>
 
                     <span className="ml-3">
-                        <p className="text-lg font-semibold">{item.label}</p>
+                        <p className="text-lg font-medium sans-serif">{item.label}</p>
                     </span>
                 </div>
             ))
