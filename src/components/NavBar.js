@@ -12,7 +12,7 @@ const navLinks = navData.filter(item => item.id !== "contact");
 const MenuDropDown = ({links}) => {
 
   return (
-        <div className="container mt-2 absolute z-10 sm:w-2/3 divide-y menu-dropdown rounded-lg shadow-md bg-white flex flex-col">
+        <div className="container w-full mt-2 absolute z-10 sm:w-2/3 divide-y menu-dropdown rounded-lg shadow-md bg-white flex flex-col">
         {
           links.map( (nav, i) => (
             <Link key={`navbar-link-${i}`} 
@@ -77,7 +77,7 @@ const NavBar = () => {
               }
           </div>  
         </div>
-        <div className="lg:hidden container flex justify-end h-10" ref={ref}>
+        <div className="lg:hidden container flex justify-center sm:justify-end h-10" ref={ref}>
                   { //dropdown
                     isComponentVisible 
                     ? <MenuDropDown links={navData} />
