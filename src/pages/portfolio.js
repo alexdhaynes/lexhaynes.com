@@ -5,7 +5,7 @@ import NavBar from '@components/NavBar'
 import { Section, SectionHero } from '@components/Section'
 import SectionHeader from '@components/SectionHeader'
 import { TeaserCard } from '@components/TeaserCard'
-import Form from '@components/Form'
+import ContactForm from '@components/ContactForm'
 
 import portfolioData from '@data/portfolio.json'
 
@@ -56,7 +56,7 @@ const Portfolio = () => {
 
             <Section>
                 <SectionHeader>Get in touch</SectionHeader>
-                <Form />
+                <ContactForm />
             </Section>
 
         </AppShell>

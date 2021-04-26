@@ -61,7 +61,7 @@ const NavBar = () => {
               
                <Link href={contactLink} passHref>
                 <div className="hidden lg:block">
-                  <Button>Get in Touch</Button>
+                  <Button variant="link">Get in Touch</Button>
                 </div>
               </Link> 
 

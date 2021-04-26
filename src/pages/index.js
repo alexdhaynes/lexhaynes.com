@@ -7,7 +7,7 @@ import { LabelledBlock, DescriptiveBlock } from '@components/StatementBlock'
 import SectionHeader from '@components/SectionHeader'
 import { ListCard } from '@components/ListCard'
 import { TeaserCard } from '@components/TeaserCard'
-import Form from '@components/Form'
+import ContactForm from '@components/ContactForm'
 import Button from '@components/Button'
 import Icon from '@components/Icon'
 
@@ -31,19 +31,19 @@ const Home = () => {
                     <NavBar />
                 </div>
             
-                <div className="w-11/12 sm:w-10/12 md:w-1/2 mx-auto flex flex-col items-center sm:flex-row sm:justify-between">
+                <div className="md:w-3/4 lg:w-1/2 mx-auto flex flex-col items-center sm:flex-row sm:justify-between">
                     <div className="w-2/3">
-                        <h1 className="font-bold text-5xl section-header">Hi, I'm Alex</h1>
-                        <h2 className="font-bold text-3xl mt-3">Front-End Developer</h2>
-                        <div className="mt-2 w-52 flex justify-between">
-                            <p className="font-medium text-lg">Ithaca, NY</p>
+                        <h1 className="text-center sm:text-left font-bold text-3xl sm:text-5xl section-header">Hi, I'm Alex</h1>
+                        <h2 className="text-center sm:text-left font-bold text-xl sm:text-3xl mt-3">Front-End Developer</h2>
+                        <div className="mx-auto sm:mx-0 justify-between mt-2 w-44 sm:w-52 flex">
+                            <p className="font-medium text-md sm:text-lg">Ithaca, NY</p>
                             <p>&bull;</p>
-                            <p className="font-medium text-lg">She / Her</p>
+                            <p className="font-medium text-md sm:text-lg">She / Her</p>
                         </div>
-                        <div className="mt-2 w-32 flex justify-between">
+                        <div className="mx-auto sm:mx-0 mt-2 w-32 flex justify-between text-sm">
                         {
                             socialData.map((item, i) => (
-                                <a key={`social-${i}`} className="underline hover:text-gray-500 text-semibold mr-6" href={item.href} title={item.name} target="_blank" rel="noreferrer">{item.name}</a>
+                                <a key={`social-${i}`} className="underline hover:text-gray-500 text-semibold" href={item.href} title={item.name} target="_blank" rel="noreferrer">{item.name}</a>
                             ))
                         }
                         </div>
@@ -129,7 +129,7 @@ const Home = () => {
 
                 <div className="container flex justify-center">
                   <Link href='/portfolio' passHref>
-                    <Button>See All Projects</Button>
+                    <Button variant="link">See All Projects</Button>
                   </Link>
                 </div>
                 
@@ -175,7 +175,7 @@ const Home = () => {
 
             <Section id="contact">
                 <SectionHeader>Get in touch</SectionHeader>
-                <Form />
+                <ContactForm />
             </Section>
 
         </AppShell>
