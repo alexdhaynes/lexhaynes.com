@@ -19,7 +19,6 @@ const sendEmail = async (firstName, lastName, email, subject, message) => {
     };
     
     const body = await mailgun.messages().send(emailMsg); 
-    console.log("did it send? ", body);
 }       
    
 

@@ -35,9 +35,11 @@ const SubmitEmail = ({formValues}) => {
     })
     .then((res) => {
         setSent("success");
+        console.log("sending data: ", res);
     },
     (error) => {
         setSent("error");
+        console.log("error: ", error);
     })
 
     if (sent === "success") {
