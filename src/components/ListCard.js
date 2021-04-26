@@ -30,7 +30,7 @@ const ItemList = ({list}) => {
 
 const ListCard = ({title, list}) => {
     return (
-        <div className="mb-10 mx-auto md:mb-0 w-3/4 md:w-full rounded-2xl bg-gray-200 p-5 pb-10 table">
+        <div className="mb-10 mx-auto md:mb-0 w-3/4 md:w-full rounded-2xl bg-gray-100 p-5 pb-10 table">
             <h2 className="font-bold text-xl text-center mb-3">{title}</h2>
             <ItemList list={list} />
         </div>
