@@ -8,10 +8,8 @@ const Footer = () => {
     return (
         <footer className="footer py-6 bg-yellow-100" id="skills">
             <div className="container w-11/12 mx-auto mb-10">
-                <div className="flex align-center justify-center">
-                    <p>Copyright &copy; {currentYear} Alexandra Haynes</p>
-                </div>
-                <div className="mx-auto flex flex-wrap w-full justify-center md:justify-between md:w-2/3 mt-6">
+      
+                <div className="mx-auto flex flex-wrap w-full justify-center md:justify-between md:w-2/3 ">
                 {
                     navData.map((item, i) => (
                         <Link key={`footerNav-${i}`}  href={item.href} title={item.displayName}>
@@ -21,6 +19,10 @@ const Footer = () => {
                         </Link>
                     ))
                 }
+                </div>
+
+                <div className="flex align-center justify-center mt-6">
+                    <p>Copyright &copy; {currentYear} Alexandra Haynes</p>
                 </div>
                 
             </div>
