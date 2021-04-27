@@ -9,6 +9,7 @@ import { TeaserCard } from '@components/TeaserCard'
 import ContactForm from '@components/ContactForm'
 import Button from '@components/Button'
 import Icon from '@components/Icon'
+import styles from '@styles/Index.module.css'
 
 import portfolioData from '@data/portfolio.json'
 import socialData from '@data/social.json'
@@ -71,9 +72,19 @@ const Home = () => {
                     }
                     </div>
 
-                        <div className="sm:w-2/3 mx-auto">
-                        <p>I’m a Front-End Developer with a strong eye for <strong>design</strong>. I work at the <strong>intersection</strong> between <strong>design & development</strong>. I take designs and bring them faithfully to life with <strong>code</strong>.</p>
-                        <p className="mt-2">As a long-time hobby artist and art history nerd, I have a well-developed eye for design. I design and build beautiful <strong>websites, UI, and interactions</strong>.</p>
+                  
+
+
+
+          
+
+                    <div className={`${styles.paragraphBorder} w-11/12 mx-auto`}>
+                        <p>  
+                        I’m a highly creative Front-End Developer with a <strong>strong</strong> understanding of <strong>design methodology</strong> and <strong>user-centric</strong> UI patterns. I take designs and bring them faithfully to life with <strong>readable, reusable, and well-organized</strong> code. I apply best practices to my code in order to <strong>minimize technical debt</strong> and ensure seamless developer collaboration.
+                        </p>
+                        <p className="mt-2">
+                        As a long-time hobby artist and art history nerd, I have a well-developed understanding of <strong>color theory, illustration techniques, and artistic composition</strong>.
+                        </p>
                         </div>
                 </Section>
       
@@ -167,9 +178,17 @@ const Home = () => {
                 }
                 </div>
                 
-                <p className="sm:w-2/3 mx-auto">
-                I’m passionate about living in a way that <strong>does no harm to living beings</strong>, and <strong>does no harm to the environment</strong>. I actively work on reducing my use of plastics and household energy. I try to always choose local, organic foods that were grown in a sustainable manner. I practice compassion for all living beings.
+                <div className={`${styles.paragraphBorder} w-11/12 mx-auto`}>
+
+                <p>
+                I’m passionate about living in a way that <strong>does no harm to living beings</strong>, and <strong>does no harm to the environment</strong>. I actively work on reducing my use of plastics and household energy. I try to always choose local, organic foods that were grown in a sustainable manner. 
                 </p>
+                <p>
+                I'm currently working on strengthening my own connection to the earth by starting my very first vegetable garden!
+                </p>
+
+                </div>
+               
 
             </Section>
 
