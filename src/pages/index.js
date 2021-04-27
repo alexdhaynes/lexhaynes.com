@@ -18,7 +18,6 @@ import hobbiesData from '@data/hobbies.json'
 import introData from '@data/intro.json'
 import interestsData from '@data/interests.json'
 
-import { useEffect } from 'react'
 
 
 const Home = () => {
