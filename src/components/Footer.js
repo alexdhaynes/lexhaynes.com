@@ -9,11 +9,11 @@ const Footer = () => {
         <footer className="footer py-6 bg-yellow-100" id="skills">
             <div className="container w-11/12 mx-auto mb-10">
       
-                <div className="mx-auto flex flex-wrap w-full justify-center md:justify-between md:w-2/3 ">
+                <div className="mx-auto flex flex-wrap w-full justify-center sm:justify-between sm:w-5/12 ">
                 {
                     navData.map((item, i) => (
                         <Link key={`footerNav-${i}`}  href={item.href} title={item.displayName}>
-                            <a className="underline flex-none hover:text-gray-500 text-semibold mr-2 md:mr-0">
+                            <a className="underline flex-none hover:text-gray-500 text-semibold mr-2">
                                 {item.displayName}
                             </a>
                         </Link>
