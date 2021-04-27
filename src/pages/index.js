@@ -18,7 +18,7 @@ import expertiseData from '@data/expertise.json'
 import hobbiesData from '@data/hobbies.json'
 import introData from '@data/intro.json'
 import interestsData from '@data/interests.json'
-
+import Fade from 'react-reveal/Fade'
 
 
 const Home = () => {
@@ -63,18 +63,20 @@ const Home = () => {
                     {
                         introData.map((item, i) => (
                              <LabelledBlock 
-                            key={`IntroStatement-${i}`} 
+                            key={`IntroStatement-${i}`}
                             label={item.label}
                             image={item.image}
-                         /> 
+                            /> 
                         ))
                     }
                     </div>
 
-                    <div className="sm:w-2/3 mx-auto">
-                    <p>I’m a Front-End Developer with a strong eye for <strong>design</strong>. I work at the <strong>intersection</strong> between <strong>design & development</strong>. I take designs and bring them faithfully to life with <strong>code</strong>.</p>
-                    <p className="mt-2">As a long-time hobby artist and art history nerd, I have a well-developed eye for design. I design and build beautiful <strong>websites, UI, and interactions</strong>.</p>
-                    </div>
+                    <Fade>
+                        <div className="sm:w-2/3 mx-auto">
+                        <p>I’m a Front-End Developer with a strong eye for <strong>design</strong>. I work at the <strong>intersection</strong> between <strong>design & development</strong>. I take designs and bring them faithfully to life with <strong>code</strong>.</p>
+                        <p className="mt-2">As a long-time hobby artist and art history nerd, I have a well-developed eye for design. I design and build beautiful <strong>websites, UI, and interactions</strong>.</p>
+                        </div>
+                    </Fade>
                 </Section>
       
 
@@ -84,12 +86,14 @@ const Home = () => {
                 <div className="sm:gap-10 md:grid lg:grid-cols-2 lg:gap-8">
                 {
                     expertiseData.map((node, i) => (
+                        <Fade key={`WhatIDo-${i}`} >
                         <DescriptiveBlock 
-                            key={`WhatIDo-${i}`} 
+                            
                             label={node.label} 
                             image={node.image}>
                             {node.desc}
                         </DescriptiveBlock>
+                        </Fade>
                     ))
                 }
                 </div>
@@ -101,7 +105,9 @@ const Home = () => {
                 <div className="sm:grid md:grid-cols-2 lg:grid-cols-3 sm:gap-8">
                 {
                     skillsData.map((node, i) => (
-                        <ListCard key={`ListCard-${i}`} title={node.title} list={node.list} />
+                        <Fade key={`ListCard-${i}`}>
+                        <ListCard  title={node.title} list={node.list} />
+                        </Fade>
                     ))
                 }
                 </div>
@@ -114,12 +120,14 @@ const Home = () => {
                     portfolioData
                       .filter((item, i) => i < 6 )
                       .map((node, i) => (
-                          <TeaserCard key={`Project-${i}`} 
+                        <Fade key={`Project-${i}`}>
+                          <TeaserCard  
                                     name={node.name} 
                                     href={node.href}
                                     image={node.image} 
                                     tags={node.tags}
                         />
+                        </Fade>
                     ))
                 }
                 </div>
@@ -139,13 +147,15 @@ const Home = () => {
                 <div className="md:grid lg:grid-cols-2 lg:gap-4">
                 {
                     hobbiesData.map((node, i) => (
+                        <Fade  key={`Hobbies-${i}`} >
                         <DescriptiveBlock 
-                            key={`Hobbies-${i}`} 
+                           
                             label={node.label}
                             image={node.image}
                         >
                             {node.desc}
                         </DescriptiveBlock>
+                        </Fade>
                     ))
                 }
                 </div>
@@ -156,17 +166,22 @@ const Home = () => {
                 <div className="space-y-4 sm:flex sm:space-y-0">
                 {
                     interestsData.map((node, i) => (
+                        <Fade key={`CareStatement-${i}`} >
                         <LabelledBlock 
-                        key={`CareStatement-${i}`} 
+                        
                         label={node.label} 
                         image={node.image}
                         /> 
+                        </Fade>
                     ))
                 }
                 </div>
+                
+                <Fade>
                 <p className="sm:w-2/3 mx-auto">
                 I’m passionate about living in a way that <strong>does no harm to living beings</strong>, and <strong>does no harm to the environment</strong>. I actively work on reducing my use of plastics and household energy. I try to always choose local, organic foods that were grown in a sustainable manner. I practice compassion for all living beings.
                 </p>
+                </Fade>
 
             </Section>
 
