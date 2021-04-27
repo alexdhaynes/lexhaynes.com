@@ -25,14 +25,15 @@ const sendEmail = async (firstName, lastName, email, subject, message) => {
 export default function handler(req, res) {
     if (req.method === 'POST') {
         const { firstName, lastName, email, subject, message } = req.body;   
-        console.log(req.body)     
+        let status;  
         // send email
         try {
             sendEmail(firstName, lastName, email, subject, message);
+            res.status(200).json({message: "success"})
         } catch (err) {
            res.status(500).json(err)
-        } finally {
-            res.status(202).json({msg: "finally"})
-        }
+        } 
+            
+        
     } 
 }
