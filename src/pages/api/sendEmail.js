@@ -10,11 +10,11 @@ const sendEmail = async (firstName, lastName, email, subject, message) => {
         subject: `Someone filled out the form on your portfolio website: ${subject}`,
         template: 'portfolio_webform',
         'h:X-Mailgun-Variables': JSON.stringify({
-            firstName,
-            lastName,
-            email,
-            subject,
-            message
+            firstName: firstName,
+            lastName: lastName,
+            email: email,
+            subject: subject,
+            message: message
         })
     };
     
@@ -24,7 +24,8 @@ const sendEmail = async (firstName, lastName, email, subject, message) => {
 
 export default function handler(req, res) {
     if (req.method === 'POST') {
-        const { firstName, lastName, email, subject, message } = req.body;        
+        const { firstName, lastName, email, subject, message } = req.body;   
+        console.log(req.body)     
         // send email
         try {
             sendEmail(firstName, lastName, email, subject, message);
