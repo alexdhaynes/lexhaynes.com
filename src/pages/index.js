@@ -38,10 +38,10 @@ const Home = () => {
                             <p>&bull;</p>
                             <p className="font-medium text-md sm:text-lg">She / Her</p>
                         </div>
-                        <div className="mx-auto sm:mx-0 mt-2 w-32 flex justify-between text-sm">
+                        <div className="mx-auto sm:mx-0 mt-2 w-36 flex justify-between">
                         {
                             socialData.map((item, i) => (
-                                <a key={`social-${i}`} className="underline hover:text-gray-500 text-semibold" href={item.href} title={item.name} target="_blank" rel="noreferrer">{item.name}</a>
+                                <a key={`social-${i}`} className="underline hover:no-underline text-semibold" href={item.href} title={item.name} target="_blank" rel="noreferrer">{item.name}</a>
                             ))
                         }
                         </div>
