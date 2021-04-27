@@ -11,6 +11,9 @@
     font-family:Sen, Inter, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     @apply serif;
