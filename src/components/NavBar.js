@@ -65,7 +65,7 @@ const NavBar = () => {
               {
                 navLinks.map( (nav, i) => (
                   <span key={`navbar-link-${i}`} className="ml-6">
-                     <Link href={nav.href}><a>{nav.displayName}</a></Link> 
+                     <Link href={nav.href}><a className="hover:underline">{nav.displayName}</a></Link> 
                   </span>
                 ))
               }
