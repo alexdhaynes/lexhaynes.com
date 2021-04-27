@@ -1,6 +1,5 @@
 
 import AppShell from '@components/AppShell'
-import NavBar from '@components/NavBar'
 import Link from 'next/link'
 import { Section, SectionHero } from '@components/Section'
 import { LabelledBlock, DescriptiveBlock } from '@components/StatementBlock'
@@ -19,8 +18,11 @@ import hobbiesData from '@data/hobbies.json'
 import introData from '@data/intro.json'
 import interestsData from '@data/interests.json'
 
+import { useEffect } from 'react'
+
 
 const Home = () => {
+  
     
     return (
         <AppShell title="Alexandra Haynes: Web Developer">
@@ -83,12 +85,12 @@ const Home = () => {
                 <div className="sm:gap-10 md:grid lg:grid-cols-2 lg:gap-8">
                 {
                     expertiseData.map((node, i) => (
-                        <DescriptiveBlock 
-                            key={`WhatIDo-${i}`}
-                            label={node.label} 
-                            image={node.image}>
-                            {node.desc}
-                        </DescriptiveBlock>
+                            <DescriptiveBlock key={`WhatIDo-${i}`} 
+                                label={node.label} 
+                                image={node.image}>
+                                {node.desc}
+                            </DescriptiveBlock>
+                       
                     ))
                 }
                 </div>
