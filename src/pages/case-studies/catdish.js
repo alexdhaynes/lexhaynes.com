@@ -210,6 +210,14 @@ const CatDish = () => {
                    
                </div>
 
+               <div className="container space-y-2">
+                   <SubHeader>A Note on React</SubHeader>
+                   <p>
+                   You might be asking: does a tiny app like this really * need * React? And the answer to that is: certainly not. Everything this app does could be accomplished with good 'ol HTML and VanillaJS. However: using React added immense value to the development experience. It's easy. It's fun(ctional). Since I'm the only dev on this project, I get to choose the development tools :)
+                   </p>
+                   
+               </div>
+
                 <div className="container space-y-2">
                    <SubHeader>Battle of the SSGs (static site generators)</SubHeader>
                    <p>
