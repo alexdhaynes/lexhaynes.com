@@ -44,7 +44,14 @@ const CatDish = () => {
             
                 <div className="container pt-10 space-y-4">
                         <h1 className="font-bold text-5xl section-header">Case Study: CatDish</h1>
-                        <a className="block  underline font-semibold hover:text-gray-700" href="https://catdish.vercel.app/" alt="CatDish App" target="_blank">Visit the App</a>
+                        <div className="flex">
+
+                            <a className="block mr-2 underline font-semibold hover:text-gray-700" href="https://catdish.vercel.app/" alt="CatDish App" target="_blank">Visit the App</a>
+                            <span>|</span>
+                            <a className="block ml-2 underline font-semibold hover:text-gray-700" href="https://github.com/lexhaynes/catdish" alt="CatDish App" target="_blank">Source Code</a>
+                        </div>
+
+                        
                     </div>
   
             </SectionHero>
@@ -281,7 +288,7 @@ const CatDish = () => {
                         <li className="ml-10">Using Tailwind with the classnames npm package makes dynamic styling a breeze </li>
                         <li className="ml-10">Caveat: using TailwindCSS on project with multiple developers would be challenging </li>
                     </ul>
-                    <p>Additionally, a <strong>current selected filters</strong> components allows users to see which filters they have chosen from each page.</p>
+                    <p>NB: I am currently considering moving from SCSS to  <strong>Styled Compoents</strong>. The ethos of TailwindCSS is: don't leave your component file to style. This felt jarring and oh-so-wrong at first, but now I find my ~ coding flow ~ disrupted by having to move into a SASS file to add styling. I think I'm finally sold on CSS-in-JS.</p>
                </div>
 
                <div className="container space-y-2">
