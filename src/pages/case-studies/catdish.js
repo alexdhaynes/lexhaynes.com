@@ -242,7 +242,7 @@ const CatDish = () => {
                    <ul className="list-disc">
                             <li className="ml-10">It has to look great on mobile</li>
                             <li className="ml-10">It should be very easy for users to filter results by the inclusion/exclusion of ingredients</li>
-                            <li className="ml-10">I have assumed that users care more about the <strong>presence/absence </strong>of certain ingredients than any particular brand or texture </li>
+                            <li className="ml-10">I have assumed that users care more about the <strong>presence/absence </strong>of certain ingredients than any particular brand or texture. However, this might change.</li>
                         </ul>
 
                     <div>
