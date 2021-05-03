@@ -46,7 +46,7 @@ const CatDish = () => {
                         <h1 className="font-bold text-5xl section-header">Case Study: CatDish</h1>
                         <div className="flex">
 
-                            <a className="block mr-2 underline font-semibold hover:text-gray-700" href="https://catdish.vercel.app/" alt="CatDish App" target="_blank">Visit the App</a>
+                            <a className="block mr-2 underline font-semibold hover:text-gray-700" href="https://catdish-lexhaynes.vercel.app/" alt="CatDish App" target="_blank">Visit the App</a>
                             <span>|</span>
                             <a className="block ml-2 underline font-semibold hover:text-gray-700" href="https://github.com/lexhaynes/catdish" alt="CatDish App" target="_blank">Source Code</a>
                         </div>
