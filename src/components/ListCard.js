@@ -13,8 +13,6 @@ const ItemList = ({list}) => {
                     <Icon 
                         src={item.image} 
                         alt={item.label}
-                        variant="circle"
-                        size="small" 
                     />
                     </span>
 

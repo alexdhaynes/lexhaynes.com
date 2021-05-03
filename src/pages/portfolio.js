@@ -1,7 +1,5 @@
 
 import AppShell from '@components/AppShell'
-import NavBar from '@components/NavBar'
-
 import { Section, SectionHero } from '@components/Section'
 import SectionHeader from '@components/SectionHeader'
 import { TeaserCard } from '@components/TeaserCard'
