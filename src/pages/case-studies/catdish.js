@@ -228,7 +228,7 @@ const CatDish = () => {
 
                 <div className="container space-y-2">
                    <p>
-                   Now that all the boring stuff is out of the way, let’s get to the fun part -- the <strong>front end</strong>!
+                   Now that all the boring stuff is out of the way, let’s get to the fun part &#8212; the <strong>front end</strong>!
                    </p>
                    
                </div>
@@ -288,7 +288,7 @@ const CatDish = () => {
                         <li className="ml-10">Using Tailwind with the classnames npm package makes dynamic styling a breeze </li>
                         <li className="ml-10">Caveat: using TailwindCSS on project with multiple developers would be challenging </li>
                     </ul>
-                    <p>NB: I am currently considering moving from SCSS to  <strong>Styled Compoents</strong>. The ethos of TailwindCSS is: don't leave your component file to style. This felt jarring and oh-so-wrong at first, but now I find my ~ coding flow ~ disrupted by having to move into a SASS file to add styling. I think I'm finally sold on CSS-in-JS.</p>
+                    <p><strong>NB:</strong> I am currently considering moving from SCSS to  <strong>Styled Compoents</strong>. My understanding of Tailwind's ethos is this: <span className="italic">don't leave your file to style</span>. This felt jarring and oh-so-wrong at first, but now I find my ~ coding flow ~ disrupted by having to move into a SASS file to add styling. I think I'm finally sold on CSS-in-JS.</p>
                </div>
 
                <div className="container space-y-2">
@@ -318,7 +318,7 @@ const CatDish = () => {
                             <li className="ml-10">Users should be able <strong>group results by brand</strong>, since seeing a long list of results of the same brand is not visually appealing and feels cluttered</li>
                             <li className="ml-10">There are some bugs with the pagination!</li>
                             <li className="ml-10">I would like to make the app’s <strong>visual identity</strong> a little more distinct</li>
-                            <li className="ml-10">The app needs to feel a little more vibrant -- this can be accomplished with <strong>subtle animation</strong> on UI interaction and during page transitions and visibility changes</li>
+                            <li className="ml-10">The app needs to feel a little more vibrant &#8212; this can be accomplished with <strong>subtle animation</strong> on UI interaction and during page transitions and visibility changes</li>
                             <li className="ml-10">Results should include <strong>product images</strong> and <strong>purchase links</strong></li>
                             <li className="ml-10">Device <strong>QA</strong></li>
                             <li className="ml-10">Logged-in users will need an interface for <strong>modifying data</strong></li>
