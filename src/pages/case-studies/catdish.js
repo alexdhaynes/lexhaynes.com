@@ -59,7 +59,7 @@ const CatDish = () => {
             <Section>
                 <div className="container space-y-3">
                     <SuperHeader>Part 1</SuperHeader>
-                    <SectionHeader>Why build this app?</SectionHeader>
+                    <SectionHeader>So what's the point of this app?</SectionHeader>
                 </div>
 
                <div className="container space-y-2">
