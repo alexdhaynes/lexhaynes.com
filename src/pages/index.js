@@ -131,6 +131,7 @@ const Home = () => {
                                     href={node.href}
                                     image={node.image} 
                                     tags={node.tags}
+                                    case_study_link={node.case_study_link || null}
                         />
                       
                     ))
