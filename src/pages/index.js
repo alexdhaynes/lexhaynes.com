@@ -60,7 +60,7 @@ const Home = () => {
                         
                 <Section bgInner="white" id="intro">
                     <SectionHeader>At the Intersection of Design & Development</SectionHeader>
-                    <div className="space-y-4 sm:flex sm:space-y-0">
+                    <div className="space-y-4 sm:flex sm:space-y-0 justify-center">
                     {
                         introData.map((item, i) => (
                              <LabelledBlock 
@@ -167,7 +167,7 @@ const Home = () => {
 
             <Section id="interests">
                 <SectionHeader>What I care about</SectionHeader>
-                <div className="space-y-4 sm:flex sm:space-y-0">
+                <div className="space-y-4 sm:flex sm:space-y-0 justify-center">
                 {
                     interestsData.map((node, i) => (
                         <LabelledBlock 
