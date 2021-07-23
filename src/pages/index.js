@@ -11,7 +11,7 @@ import Button from '@components/Button'
 import Icon from '@components/Icon'
 import styles from '@styles/Index.module.css'
 
-import portfolioData from '@data/portfolio.json'
+import portfolioData from '@data/portfolio-all.json'
 import socialData from '@data/social.json'
 import skillsData from '@data/skills.json'
 import expertiseData from '@data/expertise.json'

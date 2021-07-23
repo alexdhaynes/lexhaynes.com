@@ -5,7 +5,7 @@ import SectionHeader from '@components/SectionHeader'
 import { TeaserCard } from '@components/TeaserCard'
 import ContactForm from '@components/ContactForm'
 
-import portfolioData from '@data/portfolio.json'
+import portfolioData from '@data/portfolio-all.json'
 
 
 
