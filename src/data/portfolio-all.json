@@ -1,7 +1,7 @@
 [
     {
         "name": "CatDish - Cat Food Allergen Database (WIP)",
-        "href": "https://catdish-git-main-lexhaynes.vercel.app/",
+        "href": "#",
         "image":"/images/portfolio/catdish.png",
         "tags": ["nextjs", "mongodb"],
         "case_study_link": "/case-studies/catdish"
