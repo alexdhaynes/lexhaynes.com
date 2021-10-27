@@ -33,11 +33,11 @@ const Home = () => {
           <div className="w-2/3">
             <h1 className="text-center sm:text-left font-bold text-3xl sm:text-5xl section-header">Hi, I'm Alex</h1>
             <h2 className="text-center sm:text-left font-bold text-xl sm:text-3xl mt-3">Front-End Developer</h2>
-            <div className="mx-auto sm:mx-0 justify-between mt-2 w-44 sm:w-52 flex">
+            {/*             <div className="mx-auto sm:mx-0 justify-between mt-2 w-44 sm:w-52 flex">
               <p className="font-medium text-md sm:text-lg">Los Angeles, CA</p>
               <p>&bull;</p>
               <p className="font-medium text-md sm:text-lg">She / Her</p>
-            </div>
+            </div> */}
             <div className="mx-auto sm:mx-0 mt-2 w-36 flex justify-between">
               {
                 socialData.map((item, i) => (
@@ -80,10 +80,10 @@ const Home = () => {
 
         <div className={`${styles.paragraphBorder} w-11/12 mx-auto`}>
           <p>
-            I’m a highly creative Front-End Developer who takes designs and bring them faithfully to life with code. I apply best practices to my code to minimize technical debt and ensure seamless developer collaboration.
+            I’m a highly creative Front-End Developer who brings designs to life with code. I apply best practices to my code to minimize technical debt and ensure seamless developer collaboration.
           </p>
           <p className="mt-2">
-            As a long-time hobby artist and art history nerd, I have a well-developed understanding of color theory, illustration techniques, and artistic composition.
+            As a long-time hobby artist and art history nerd, I have a strong foundation in illustration techniques and artistic composition.
           </p>
         </div>
       </Section>

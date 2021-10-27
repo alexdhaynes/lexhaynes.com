@@ -1,15 +1,11 @@
 [
-    {
-        "name": "CatDish - Cat Food Allergen Database (WIP)",
-        "href": "https://catdish-git-main-lexhaynes.vercel.app/",
-        "image":"/images/portfolio/catdish.png",
-        "tags": ["nextjs", "mongodb"],
-        "case_study_link": "/case-studies/catdish"
-    },
-    {
-        "name": "Augmented Reality Prototype",
-        "href": "https://ar-mardi-gras-mask.netlify.app/",
-        "image":"/images/portfolio/ar-mask.jpg",
-        "tags": ["AR", "camera"]
-    }
+  {
+    "name": "Augmented Reality Prototype",
+    "href": "https://ar-mardi-gras-mask.netlify.app/",
+    "image": "/images/portfolio/ar-mask.jpg",
+    "tags": [
+      "AR",
+      "camera"
+    ]
+  }
 ]
