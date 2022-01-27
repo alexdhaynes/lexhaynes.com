@@ -20,20 +20,20 @@
         "title": "CSS",
         "list": [
             {
-                "image": "/images/icons/sass.png",
-                "label": "SASS"
+                "image": "/images/icons/styledComponents.png",
+                "label": "Styled Components"
             },
             {
                 "image": "/images/icons/tailwind.png",
                 "label": "Tailwind"
             },
             {
-                "image": "/images/icons/bootstrap.png",
-                "label": "Bootstrap"
+              "image": "/images/icons/sass.png",
+              "label": "SASS"
             },
             {
-                "image": "/images/icons/bulma.png",
-                "label": "Bulma"
+                "image": "/images/icons/bootstrap.png",
+                "label": "Bootstrap"
             }
         ]
     },
@@ -83,6 +83,10 @@
         "title": "Content Management Systems",
         "list": [
             {
+                "image": "/images/icons/contentful.png",
+                "label": "Contentful"
+            },
+            {
                 "image": "/images/icons/wordpress.png",
                 "label": "Wordpress"
             },
@@ -93,16 +97,16 @@
             {
                 "image": "/images/icons/drupal.png",
                 "label": "Drupal"
-            },
-            {
-                "image": "/images/icons/jekyll.png",
-                "label": "Jekyll / Ghost / Hugo"
             }
         ]
     },
     {
         "title": "Design Tools",
         "list": [
+            {
+                "image": "/images/icons/figma.png",
+                "label": "Figma"
+            },
             {
                 "image": "/images/icons/photoshop.png",
                 "label": "Photoshop"

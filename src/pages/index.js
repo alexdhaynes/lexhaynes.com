@@ -25,17 +25,11 @@ const Home = () => {
             <h1 className="text-center sm:text-left font-bold text-3xl sm:text-5xl section-header">
               Hi, I'm Alex
             </h1>
-            <h2 className="text-center sm:text-left font-medium text-xl mt-6">
-              Front-End Developer @ <a href="https://www.helpscout.com" className="underline">Helpscout</a>
+            <h2 className="text-center sm:text-left font-medium text-xl mt-5">
+              Front-End Developer @ <a href="https://www.helpscout.com" className="underline">Help Scout</a>
             </h2>
-            <div className="w-2/3 flex justify-between mt-2 font-medium text-l">
+            <div className="mt-6 font-medium text-l space-y-2 flex flex-col justify-items-center">
               <div>
-                <p>Ithaca, NY</p>
-              </div>
-
-              <div>|</div>
-
-              <div className="flex">
                 {socialData.map((item, i) => (
                   <a
                     key={`social-${i}`}
@@ -49,6 +43,7 @@ const Home = () => {
                   </a>
                 ))}
               </div>
+              <p>Ithaca, NY for now!</p>
             </div>
           </div>
 
