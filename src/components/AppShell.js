@@ -11,6 +11,10 @@ const AppShell = ({ title, children }) => {
       <Head>
         <title>{title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:title" content="Alex Haynes: Front End Developer" />
+        <meta property="og:type" content="portfolio" />
+        <meta property="og:url" content="https://lexhaynes.com" />
+        <meta property="og:image" content="/images/meta/meta.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Sen:wght@400&display=swap"
