@@ -4,7 +4,7 @@
 const SectionHero = ({children}) => {
 
     return (
-    <section className={`pb-36 mb-12 sm:mb-10`} id="hero" >
+    <section className={`pb-36 mb-12 sm:mb-10`} style={{marginTop: '80px'}} id="hero" >
         <div className={`container w-11/12 px-6  max-w-screen-xl space-y-16`}>
               {children}  
          </div>

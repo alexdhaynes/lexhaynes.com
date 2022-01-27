@@ -20,20 +20,21 @@ const Home = () => {
   return (
     <AppShell title="Alex Haynes: Web Developer">
       <SectionHero>
-        <div className="md:w-3/4 lg:w-1/2 mx-auto flex flex-col items-center sm:flex-row sm:justify-between pt-32">
+        <div className="md:w-3/4 lg:w-1/2 mx-auto flex flex-col items-center sm:flex-row sm:justify-between">
           <div className="w-2/3 space-y-6">
             <h1 className="text-center sm:text-left font-bold text-3xl sm:text-5xl section-header">
               Hi, I'm Alex
             </h1>
-            <h2 className="text-center sm:text-left font-medium text-xl">
+            <h2 className="text-center sm:text-left font-medium text-xl" style={{marginBottom: '20px'}}>
               Front-End Developer @ <a href="https://www.helpscout.com" className="underline">Help Scout</a>
             </h2>
             <div className="font-medium text-l space-y-2 flex flex-col justify-items-center">
-              <div className="space-x-3">
+              <div>
                 {socialData.map((item, i) => (
                   <a
                     key={`social-${i}`}
                     className="underline hover:no-underline"
+                    style={{paddingRight: '16px'}}
                     href={item.href}
                     title={item.name}
                     target="_blank"
