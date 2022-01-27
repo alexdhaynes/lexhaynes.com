@@ -15,7 +15,7 @@ const AppShell = ({ title, children }) => {
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Web developer profile of Alexandra Haynes. Personal portfolio site with latest projects." />
         <meta property="og:url" content="https://lexhaynes.com" />
-        <meta property="og:image" content="/images/meta/meta.png" />
+        <meta property="og:image" content="https://lexhaynes.com/images/meta/meta.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Sen:wght@400&display=swap"
