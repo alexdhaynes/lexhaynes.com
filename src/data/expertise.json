@@ -1,12 +1,12 @@
 [
     {
         "label": "Web Development",
-        "desc": "I build pixel-perfect, responsive websites from PSDs, Sketch files, or napkin doodles!",
+        "desc": "I build pixel-perfect, responsive websites/apps from Figma files, PSDs, Sketch files, or napkin doodles!",
         "image": "/images/svgs/web-dev.svg",
         "alt": "Web dev"
     },
     {
-        "label": "UI Design",
+        "label": "UI Development",
         "desc": "I create a beautiful, thoughtfully designed user interfaces for complex data",
         "image": "/images/svgs/ui-design.svg",
         "alt": "UI design"
@@ -19,7 +19,7 @@
     },
     {
         "label": "App Development",
-        "desc": "I build web and mobile apps that look great on every device",
+        "desc": "I build apps that look great on every device",
         "image": "/images/svgs/app-dev.svg",
         "alt": "app dev"
     }

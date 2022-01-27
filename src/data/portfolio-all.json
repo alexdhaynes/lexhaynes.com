@@ -1,5 +1,15 @@
 [
   {
+    "name": "In The Works",
+    "href": "https://intheworks.helpscout.com",
+    "image": "/images/portfolio/itw.png",
+    "tags": [
+      "Website",
+      "Day Job",
+      "Dev team collab"
+    ]
+  },
+  {
     "name": "Augmented Reality Prototype",
     "href": "https://ar-mardi-gras-mask.netlify.app/",
     "image": "/images/portfolio/ar-mask.jpg",

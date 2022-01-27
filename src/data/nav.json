@@ -18,15 +18,5 @@
         "id": "about",
         "displayName": "About",
         "href": "/#about"
-    },
-    {
-        "id": "interests",
-        "displayName": "Interests",
-        "href": "/#interests"
-    },
-    {
-        "id": "contact",
-        "displayName": "Get in touch",
-        "href": "/#contact"
-    }
+    } 
 ]

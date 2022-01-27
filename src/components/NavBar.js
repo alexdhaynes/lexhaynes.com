@@ -1,11 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 import navData from '@data/nav.json'
-import Button from '@components/Button'
-import { MenuIcon, XIcon } from '@heroicons/react/solid'
 import useComponentVisible from '../hooks/useComponentVisible';
 import { useScrollData } from "scroll-data-hook";
-
 
 const navLinks = navData.filter(item => item.id !== "contact");
 
@@ -71,7 +68,7 @@ const NavBar = () => {
               }
             </div>
           </div>
-
+{/* 
           <div className="navbar-right flex justify-end">
               
                <Link href='/#contact' passHref>
@@ -90,7 +87,7 @@ const NavBar = () => {
                     <MenuIcon className="h-6 w-6 text-gray-800 hover:text-gray-500" />
                   </button>
               }
-          </div>  
+          </div>  */} 
         </div>
         <div className={`h-0 lg:hidden container flex z-10
               justify-center sm:justify-end
