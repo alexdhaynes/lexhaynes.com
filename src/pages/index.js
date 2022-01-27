@@ -25,7 +25,7 @@ const Home = () => {
             <h1 className="text-center sm:text-left font-bold text-3xl sm:text-5xl section-header">
               Hi, I'm Alex
             </h1>
-            <h2 className="text-center sm:text-left font-medium text-xl" style={{marginBottom: '20px'}}>
+            <h2 className="text-center sm:text-left font-medium text-xl" style={{margin: '20px 0'}}>
               Front-End Developer @ <a href="https://www.helpscout.com" className="underline">Help Scout</a>
             </h2>
             <div className="font-medium text-l space-y-2 flex flex-col justify-items-center">
