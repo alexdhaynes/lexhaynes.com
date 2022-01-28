@@ -20,15 +20,15 @@ const Home = () => {
   return (
     <AppShell title="Alex Haynes: Web Developer">
       <SectionHero>
-        <div className="md:w-3/4 lg:w-1/2 mx-auto flex flex-col items-center sm:flex-row sm:justify-between">
-          <div className="w-2/3 space-y-6">
-            <h1 className="text-center sm:text-left font-bold text-3xl sm:text-5xl section-header">
+        <div className="mx-auto flex flex-col items-center sm:flex-row justify-evenly">
+          <div className="space-y-6">
+            <h1 className="font-bold text-3xl sm:text-5xl section-header">
               Hi, I'm Alex
             </h1>
-            <h2 className="text-center sm:text-left font-medium text-xl" style={{margin: '20px 0'}}>
+            <h2 className="font-medium text-xl" style={{margin: '20px 0'}}>
               Front-End Developer @ <a href="https://www.helpscout.com" className="underline">Help Scout</a>
             </h2>
-            <div className="font-medium text-l space-y-2 flex flex-col justify-items-center">
+            <div className="font-medium text-l space-y-2 flex flex-col justify-center">
               <div>
                 {socialData.map((item, i) => (
                   <a
@@ -48,7 +48,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="mt-6 sm:mt-0 relative w-36 h-36 overflow-hidden rounded-full border-8 border-white">
+          <div className="mt-6 sm:mt-0 relative w-36 h-36 overflow-hidden rounded-full border-4 border-white">
             <Icon
               src="/images/jpgs/profile.jpg"
               alt="Alexandra Haynes: Profile Picture"
