@@ -15,7 +15,7 @@ const AppShell = ({ title, children }) => {
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
-          content="Web developer profile of Alexandra Haynes. Personal portfolio site with latest projects."
+          content="Front-End Developer profile of Alexandra Haynes. Personal portfolio site with latest projects."
         />
         <meta property="og:url" content="https://lexhaynes.com" />
         <meta

@@ -18,7 +18,7 @@ import interestsData from "@data/interests.json";
 
 const Home = () => {
   return (
-    <AppShell title="Alex Haynes: Web Developer">
+    <AppShell title="Alex Haynes: Front-End Developer">
       <SectionHero>
         <div className="w-11/12 mx-auto flex flex-col items-center sm:flex-row justify-around">
           <div className="space-y-6">
@@ -58,7 +58,7 @@ const Home = () => {
       </SectionHero>
 
       <Section bgInner="white" id="intro">
-        <SectionHeader>Building cool stuff for the web</SectionHeader>
+        <SectionHeader>Building cool stuff for screens</SectionHeader>
         <div className="space-y-4 sm:flex sm:space-y-0 justify-center">
           {introData.map((item, i) => (
             <LabelledBlock
@@ -73,7 +73,7 @@ const Home = () => {
           <p>
             I’m a highly creative Front-End Developer who brings designs to life
             with code. I apply best practices to my code to minimize technical
-            debt and ensure seamless developer collaboration. I've worked as a Front-End Developer on Marketing teams since 2013.
+            debt and ensure seamless developer collaboration. I've been working as a Front-End Developer on Marketing teams since 2013.
           </p>
         </div>
       </Section>
