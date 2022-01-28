@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <AppShell title="Alex Haynes: Web Developer">
       <SectionHero>
-        <div className="mx-auto flex flex-col items-center sm:flex-row justify-evenly">
+        <div className="w-11/12 mx-auto flex flex-col items-center sm:flex-row justify-around">
           <div className="space-y-6">
             <h1 className="font-bold text-3xl sm:text-5xl section-header">
               Hi, I'm Alex
@@ -48,7 +48,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="mt-6 sm:mt-0 relative w-36 h-36 overflow-hidden rounded-full border-4 border-white p-16">
+          <div className="mt-6 sm:mt-0 relative w-36 h-36 overflow-hidden rounded-full" style={{ border: "solid white 4px"}}>
             <Icon
               src="/images/jpgs/profile.jpg"
               alt="Alexandra Haynes: Profile Picture"
