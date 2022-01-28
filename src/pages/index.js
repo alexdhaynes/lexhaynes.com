@@ -48,7 +48,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="mt-6 sm:mt-0 relative w-36 h-36 overflow-hidden rounded-full border-4 border-white">
+          <div className="mt-6 sm:mt-0 relative w-36 h-36 overflow-hidden rounded-full border-4 border-white p-16">
             <Icon
               src="/images/jpgs/profile.jpg"
               alt="Alexandra Haynes: Profile Picture"
