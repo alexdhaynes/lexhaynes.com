@@ -24,25 +24,17 @@
                 "label": "Styled Components"
             },
             {
-                "image": "/images/icons/tailwind.png",
-                "label": "Tailwind"
-            },
-            {
               "image": "/images/icons/sass.png",
               "label": "SASS"
-            },
-            {
-                "image": "/images/icons/bootstrap.png",
-                "label": "Bootstrap"
             }
         ]
     },
     {
-        "title": "Javascript",
+        "title": "Javascript/TypeScript",
         "list": [
             {
                 "image": "/images/icons/react.png",
-                "label": "React / React Native"
+                "label": "React"
             },
             {
                 "image": "/images/icons/node.png",
@@ -68,14 +60,6 @@
             {
                 "image": "/images/icons/express.png",
                 "label": "ExpressJS"
-            },
-            {
-                "image": "/images/icons/php.png",
-                "label": "PHP"
-            },
-            {
-                "image": "/images/icons/python.png",
-                "label": "Python"
             }
         ]
     },
@@ -131,10 +115,6 @@
             {
                 "image": "/images/icons/terminal.png",
                 "label": "Terminal"
-            },
-            {
-                "image": "/images/icons/scrapy.png",
-                "label": "Scrapy"
             }
         ]
     }

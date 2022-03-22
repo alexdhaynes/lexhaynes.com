@@ -18,10 +18,10 @@
         "alt": "web animation"
     },
     {
-        "label": "App Development",
-        "desc": "I build apps that look great on every device",
-        "image": "/images/svgs/app-dev.svg",
-        "alt": "app dev"
+        "label": "Learning and Development",
+        "desc": "I keep up to date with new Front-End Technologies",
+        "image": "/images/svgs/pali.svg",
+        "alt": "learning"
     }
 
 ]
