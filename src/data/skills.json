@@ -3,10 +3,6 @@
         "title": "HTML",
         "list": [
             {
-                "image": "/images/icons/accessible.png",
-                "label": "Accessibility"
-            },
-            {
                 "image": "/images/icons/html.png",
                 "label": "Semantic HTML"
             },
@@ -21,11 +17,15 @@
         "list": [
             {
                 "image": "/images/icons/styledComponents.png",
+                "label": "CSS-in-JS"
+            },
+            {
+                "image": "/images/icons/tailwind.png",
                 "label": "Styled Components"
             },
             {
-              "image": "/images/icons/sass.png",
-              "label": "SASS"
+                "image": "/images/icons/bootstrap.png",
+                "label": "CSS Animation"
             }
         ]
     },
@@ -38,7 +38,7 @@
             },
             {
                 "image": "/images/icons/node.png",
-                "label": "NodeJS"
+                "label": "TypeScript"
             },
             {
                 "image": "/images/icons/gatsby.png",
@@ -47,6 +47,10 @@
             {
                 "image": "/images/icons/gsap.png",
                 "label": "GSAP (Greensock)"
+            },
+            {
+                "image": "/images/icons/node.png",
+                "label": "NodeJS"
             }
         ]
     },
@@ -97,7 +101,7 @@
             },
             {
                 "image": "/images/icons/illustrator.png",
-                "label": "Illustrator"
+                "label": "Adobe Illustrator"
             },
             {
                 "image": "/images/icons/sketch.png",
@@ -110,7 +114,7 @@
         "list": [
             {
                 "image": "/images/icons/github.png",
-                "label": "Git / Bitbucket"
+                "label": "GitHub"
             },
             {
                 "image": "/images/icons/terminal.png",

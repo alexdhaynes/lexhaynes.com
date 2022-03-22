@@ -1,6 +1,13 @@
 import Image from 'next/image'
 import { useState } from 'react'
-import styles from '@styles/Icon.module.css'
+import {css} from 'styled-components';
+
+const bgStyle = css`
+    background: url('/images/svgs/loading.svg') no-repeat center center;
+    width:100%;
+    height:100%;
+    background-size:cover;
+`
 
 const Icon = ({src, alt}) => {
     const [loaded, setLoaded ] = useState(false)
@@ -10,7 +17,7 @@ const Icon = ({src, alt}) => {
     }
 
     return (
-        <Image className={`image ${loaded ? '' : styles.bg}`}
+        <Image css={loaded && bgStyle}
             onLoad={onLoadCallback} 
             src={src}
             alt={alt}

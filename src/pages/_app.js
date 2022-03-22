@@ -2,6 +2,10 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import '@styles/globals.css'
 
 const GlobalStyle = createGlobalStyle`
+  html {
+      scroll-behavior: smooth;
+  }
+
   body {
     margin: 0;
     padding: 0;
@@ -10,10 +14,10 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const theme = {
-// todo: global theme here
-/*   colors: {
-    primary: '#0070f3',
-  }, */
+colors: {
+    serif: 'font-family: Merriweather, Garamond, serif',
+    sansSerif: 'font-family:Sen, Inter, sans-serif;'
+  },
 }
 
 function MyApp({ Component, pageProps }) {

@@ -1,10 +1,10 @@
-import AppShell from "@components/AppShell";
-import Link from "next/link";
-import { Section, SectionHero } from "@components/Section";
-import { LabelledBlock, DescriptiveBlock } from "@components/StatementBlock";
-import SectionHeader from "@components/SectionHeader";
+import { useState } from "react"
+// components
+import { DescriptiveBlock } from "@components/StatementBlock";
+import { LabelledBlock } from "@components/StatementBlock";
 import { ListCard } from "@components/ListCard";
 import { TeaserCard } from "@components/TeaserCard";
+import AppShell from "@components/AppShell";
 import Button from "@components/Button";
 import Icon from "@components/Icon";
 import styles from "@styles/Index.module.css";
@@ -12,16 +12,35 @@ import styles from "@styles/Index.module.css";
 import portfolioData from "@data/portfolio.json";
 import socialData from "@data/social.json";
 import skillsData from "@data/skills.json";
-import introData from "@data/intro.json";
-import interestsData from "@data/interests.json";
 
-import styled from 'styled-components'
+//css
+import styled, { css } from 'styled-components'
 
+const sectionStyles = css`
+  margin: 80px auto;
+`
+export const SectionHero = styled.section`
+  ${sectionStyles}
+  border:solid blue 1px;
+`;
+
+export const Section = styled.section`
+   ${sectionStyles}
+   border:solid red 1px;
+`;
+
+export const SectionHeader = styled.h2`
+  color: red;
+`;
+
+const FEATURED_PROJECTS_LENGTH = 3;
 
 const Home = () => {
+  const [showAllProjects, setShowAllProjects] = useState(false);
+
   return (
     <AppShell title="Alex Haynes: Front-End Developer">
-   
+      {/* HERO SECTION */}
       <SectionHero>
         <div className="w-11/12 mx-auto flex flex-col items-center sm:flex-row justify-around">
           <div className="space-y-6">
@@ -60,78 +79,84 @@ const Home = () => {
         </div>
       </SectionHero>
 
+      {/* INTRO SECTION */}
       <Section bgInner="white" id="intro">
         <SectionHeader>Building cool stuff for screens</SectionHeader>
-        <div className="space-y-4 sm:flex sm:space-y-0 justify-center">
-          {introData.map((item, i) => (
-            <LabelledBlock
-              key={`IntroStatement-${i}`}
-              label={item.label}
-              image={item.image}
-            />
-          ))}
-        </div>
 
+        <div className={`w-11/12 mx-auto`}>
           <p>
-            I’m a highly creative Front-End Developer who builds delightful UI for the web. 
+            I’m a highly creative Front-End Developer who builds delightful experiences for the web. I build interactions, components, landing pages, and websites that delight users. I work closely with stakeholders to implement thoughtful UI, and componentize and document code for easy reusability among developers and codebases.
           </p>
+        </div>
       </Section>
-
-
+      
+      {/* PORTFOLIO SECTION */}
       <Section id="portfolio">
         <SectionHeader>Featured projects</SectionHeader>
         <div className="md:grid md:grid-cols-2 md:gap-4 xl:grid-cols-3">
-          {portfolioData.slice(0, 4)
-            .map((node, i) => (
-              <TeaserCard
-                key={`Project-${i}`}
-                name={node.name}
-                href={node.href}
-                image={node.image}
-                tags={node.tags}
-                case_study_link={node.case_study_link || null}
-              />
-            ))}
-        </div>
+          {portfolioData.slice(0, FEATURED_PROJECTS_LENGTH).map(node => {
+             return <TeaserCard
+                  key={`Project-${node.name}`}
+                  name={node.name}
+                  href={node.href}
+                  image={node.image}
+                  tags={node.tags}
+                  case_study_link={node.case_study_link || null}
+                />
+            })}
+            </div>
+          {
+            showAllProjects && (
+              <>
+              <h2>Interactive ad demos (Requires adblocker to be off to view)</h2>
+              <div className="md:grid md:grid-cols-2 md:gap-4 xl:grid-cols-3">
+                {
+                  portfolioData.slice(FEATURED_PROJECTS_LENGTH, portfolioData.length).map(node => ( 
+                  <TeaserCard
+                    key={`Project-${node.name}`}
+                    name={node.name}
+                    href={node.href}
+                    image={node.image}
+                    tags={node.tags}
+                    case_study_link={node.case_study_link || null}
+                  />
+                  ))
+                }
+              </div>
+              </>
+            )
+          }
 
-        <div className="container flex justify-center">
-          <Link href="/portfolio" passHref>
-            <Button variant="link">See All Projects</Button>
-          </Link>
-        </div>
+          { showAllProjects === false &&
+            <Button onClick={() => {
+              setShowAllProjects(true);
+            }}>See All Projects</Button>
+          }
+          
       </Section>
 
+      {/* SKILLS SECTION */}
       <Section id="skills">
         <SectionHeader>My toolkit</SectionHeader>
-        <div className="sm:grid md:grid-cols-2 lg:grid-cols-3 sm:gap-8">
-          {skillsData.map((node, i) => (
-            <ListCard
-              key={`ListCard-${i}`}
-              title={node.title}
-              list={node.list}
-            />
+          {skillsData.map(node => (
+            <div key={`list-${node.title}`}>
+              <h3>{node.title}</h3>
+              <ul>
+              {node.list.map(item => (
+                  <p key={`skill-${node.label}`}>{item.label}</p>
+              ))} 
+              </ul>
+            </div>
           ))}
-        </div>
       </Section>
 
+      {/* ABOUT SECTION */}
       <Section id="about">
         <SectionHeader>What I care about</SectionHeader>
-        <div className="space-y-4 sm:flex sm:space-y-0 justify-center">
-          {interestsData.map((node, i) => (
-            <LabelledBlock
-              key={`CareStatement-${i}`}
-              label={node.label}
-              image={node.image}
-            />
-          ))}
-        </div>
-
-        <div className={`${styles.paragraphBorder} w-11/12 mx-auto`}>
           <p>
             I’m passionate about living in a way that does no harm to living
             beings, and does minimal or no harm to the environment.
           </p>
-        </div>
       </Section>
     </AppShell>
   );

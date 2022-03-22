@@ -2,7 +2,7 @@ import Head from "next/head";
 import NavBar from "@components/NavBar";
 import Footer from "@components/Footer";
 import ScrollToTop from "@components/ScrollToTop";
-import "@styles/AppShell.module.css";
+
 const GA_TRACKING_ID = "UA-40660950-4";
 
 const AppShell = ({ title, children }) => {
