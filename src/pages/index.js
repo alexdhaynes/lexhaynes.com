@@ -18,6 +18,7 @@ import styled, { css } from 'styled-components'
 
 const sectionStyles = css`
   margin: 80px auto;
+  position:relative;
 `
 export const SectionHero = styled.section`
   ${sectionStyles}
@@ -33,6 +34,13 @@ export const SectionHeader = styled.h2`
   color: red;
 `;
 
+export const ProfilePicDIV = styled.div`
+  width:150px;
+  height:150px;
+  border:dashed green 3px;
+  position: relative;
+`;
+
 const FEATURED_PROJECTS_LENGTH = 3;
 
 const Home = () => {
@@ -42,41 +50,31 @@ const Home = () => {
     <AppShell title="Alex Haynes: Front-End Developer">
       {/* HERO SECTION */}
       <SectionHero>
-        <div className="w-11/12 mx-auto flex flex-col items-center sm:flex-row justify-around">
-          <div className="space-y-6">
-            <h1 className="font-bold text-3xl sm:text-5xl section-header">
-              Hi, I'm Alex
+            <h1>
+              Front-End Developer @<a href="https://www.helpscout.com" className="underline">Help Scout</a>
             </h1>
-            <h2 className="font-medium text-xl" style={{margin: '20px 0'}}>
-              Front-End Developer @ <a href="https://www.helpscout.com" className="underline">Help Scout</a>
-            </h2>
-            <div className="font-medium text-l space-y-2 flex flex-col justify-center">
-              <div>
-                {socialData.map((item, i) => (
-                  <a
-                    key={`social-${i}`}
-                    className="underline hover:no-underline"
-                    style={{paddingRight: '16px'}}
-                    href={item.href}
-                    title={item.name}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-              <p>Ithaca, NY for now!</p>
-            </div>
-          </div>
-
-          <div className="mt-6 sm:mt-0 relative w-36 h-36 overflow-hidden rounded-full" style={{ border: "solid white 4px"}}>
-            <Icon
-              src="/images/jpgs/profile.jpg"
-              alt="Alexandra Haynes: Profile Picture"
-            />
-          </div>
-        </div>
+            {socialData.map((item, i) => (
+              <a
+                key={`social-${i}`}
+                className="underline hover:no-underline"
+                style={{paddingRight: '16px'}}
+                href={item.href}
+                title={item.name}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {item.name}
+              </a>
+            ))}
+            <p>Ithaca, NY for now!</p>
+              
+            <ProfilePicDIV>
+              <Icon
+                src="/images/jpgs/profile.jpg"
+                alt="Alexandra Haynes: Profile Picture"
+              />
+            </ProfilePicDIV>
+          
       </SectionHero>
 
       {/* INTRO SECTION */}

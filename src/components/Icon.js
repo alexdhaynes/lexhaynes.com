@@ -17,14 +17,13 @@ const Icon = ({src, alt}) => {
     }
 
     return (
-        <Image css={loaded && bgStyle}
-            onLoad={onLoadCallback} 
-            src={src}
-            alt={alt}
-            layout="fill"
-            objectFit="cover" 
-
-        />
+      <Image css={loaded && bgStyle}
+        onLoad={onLoadCallback} 
+        src={src}
+        alt={alt}
+        layout="fill"
+        objectFit="cover" 
+      />
     )
   
 }
