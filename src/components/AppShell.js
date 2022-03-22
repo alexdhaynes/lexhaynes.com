@@ -7,7 +7,7 @@ const GA_TRACKING_ID = "UA-40660950-4";
 
 const AppShell = ({ title, children }) => {
   return (
-    <main className="bg-yellow-100">
+    <main>
       <Head>
         <title>{title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />

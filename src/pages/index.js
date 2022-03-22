@@ -9,16 +9,19 @@ import Button from "@components/Button";
 import Icon from "@components/Icon";
 import styles from "@styles/Index.module.css";
 
-import portfolioData from "@data/portfolio-all.json";
+import portfolioData from "@data/portfolio.json";
 import socialData from "@data/social.json";
 import skillsData from "@data/skills.json";
-import expertiseData from "@data/expertise.json";
 import introData from "@data/intro.json";
 import interestsData from "@data/interests.json";
+
+import styled from 'styled-components'
+
 
 const Home = () => {
   return (
     <AppShell title="Alex Haynes: Front-End Developer">
+   
       <SectionHero>
         <div className="w-11/12 mx-auto flex flex-col items-center sm:flex-row justify-around">
           <div className="space-y-6">
@@ -69,28 +72,11 @@ const Home = () => {
           ))}
         </div>
 
-        <div className={`${styles.paragraphBorder} w-11/12 mx-auto`}>
           <p>
-          I’m a highly creative Front-End Developer who builds delightful experiences for the web. I build interactions, components, landing pages, and websites that delight users. I work closely with stakeholders to implement thoughtful UI, and componentize and document code for easy reusability among developers and codebases.
+            I’m a highly creative Front-End Developer who builds delightful UI for the web. 
           </p>
-        </div>
       </Section>
 
-      <Section id="what-i-do">
-        <SectionHeader>What I do</SectionHeader>
-
-        <div className="sm:gap-10 md:grid lg:grid-cols-2 lg:gap-8">
-          {expertiseData.map((node, i) => (
-            <DescriptiveBlock
-              key={`WhatIDo-${i}`}
-              label={node.label}
-              image={node.image}
-            >
-              {node.desc}
-            </DescriptiveBlock>
-          ))}
-        </div>
-      </Section>
 
       <Section id="portfolio">
         <SectionHeader>Featured projects</SectionHeader>
