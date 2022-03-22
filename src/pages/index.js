@@ -97,8 +97,7 @@ const Home = () => {
       <Section id="portfolio">
         <SectionHeader>Featured projects</SectionHeader>
         <div className="md:grid md:grid-cols-2 md:gap-4 xl:grid-cols-3">
-          {portfolioData
-            .filter((_, i) => i < 6)
+          {portfolioData.slice(0, 4)
             .map((node, i) => (
               <TeaserCard
                 key={`Project-${i}`}
