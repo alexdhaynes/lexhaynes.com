@@ -71,9 +71,7 @@ const Home = () => {
 
         <div className={`${styles.paragraphBorder} w-11/12 mx-auto`}>
           <p>
-            I’m a highly creative Front-End Developer who brings designs to life
-            with code. I apply best practices to my code to minimize technical
-            debt and ensure seamless developer collaboration. I've been working as a Front-End Developer on Marketing teams since 2013.
+          I’m a highly creative Front-End Developer who builds delightful experiences for the web. I build interactions, components, landing pages, and websites that delight users. I work closely with stakeholders to implement thoughtful UI, and componentize and document code for easy reusability among developers and codebases.
           </p>
         </div>
       </Section>
