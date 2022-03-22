@@ -10,6 +10,16 @@
     ]
   },
   {
+    "name": "Help Scout - Marketing Site",
+    "href": "https://www.helpscout.com",
+    "image": "/images/portfolio/helpscout.png",
+    "tags": [
+      "Website",
+      "Day Job",
+      "Dev team collab"
+    ]
+  },
+  {
     "name": "Augmented Reality Prototype",
     "href": "https://ar-mardi-gras-mask.netlify.app/",
     "image": "/images/portfolio/ar-mask.jpg",

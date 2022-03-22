@@ -16,10 +16,5 @@ module.exports = {
      '12': '12px',
     }
   },
-  variants: {},
-  plugins: [
-    require("@tailwindcss/forms")({
-      strategy: 'class',
-    }),
-   ],
+  variants: {}
 }
