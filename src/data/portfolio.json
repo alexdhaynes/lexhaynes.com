@@ -1,0 +1,77 @@
+[
+  {
+    "name": "In The Works",
+    "href": "https://intheworks.helpscout.com",
+    "image": "/images/portfolio/itw.png",
+    "tags": [
+      "Website",
+      "Contributor"
+    ],
+    "stack": [
+      "Gatsby",
+      "Contentful",
+      "React",
+      "Styled Components",
+      "React Spring"
+    ]
+  },
+  {
+    "name": "Help Scout - Marketing Site",
+    "href": "https://www.helpscout.com",
+    "image": "/images/portfolio/helpscout.png",
+    "tags": [
+      "Website",
+      "Contributor"
+    ],
+    "stack": [
+      "Gatsby",
+      "Contentful",
+      "React",
+      "Styled Components"
+    ],
+    "detailFile": "contentful-app-demo"
+  },
+  {
+    "name": "Contentful Custom App Demo",
+    "href": "https://github.com/alexhayneshs/contentful-conditional-fields-demo",
+    "image": "/images/portfolio/contentful-demo.png",
+    "tags": [
+      "Demo",
+      "Project lead"
+    ],
+    "stack": [
+      "Contentful API",
+      "TypeScript",
+      "React"
+    ],
+    "detailFile": "contentful-app-demo"
+  },
+  {
+    "name": "Augmented Reality Prototype",
+    "href": "https://ar-mardi-gras-mask.netlify.app/",
+    "image": "/images/portfolio/ar-mask.jpg",
+    "tags": [
+      "Demo",
+      "Project Lead"
+    ],
+    "stack": [
+      "ThreeJS"
+    ],
+    "detailFile": "contentful-app-demo"
+  },
+  {
+    "name": "Holiday Game Collection",
+    "href": "https://everly-jamboree-438f3e.netlify.com/",
+    "image": "/images/portfolio/fl-lotto.jpg",
+    "tags": [
+      "Demo",
+      "Project lead"
+    ],
+    "stack": [
+      "Netlify",
+      "Jekyll",
+      "GSAP"
+    ],
+    "detailFile": "fl-lotto-demo"
+  }
+]
