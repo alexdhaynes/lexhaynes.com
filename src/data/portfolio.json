@@ -13,7 +13,8 @@
       "React",
       "Styled Components",
       "React Spring"
-    ]
+    ],
+    "detailFile": "itw"
   },
   {
     "name": "Help Scout - Marketing Site",
@@ -29,7 +30,7 @@
       "React",
       "Styled Components"
     ],
-    "detailFile": "contentful-app-demo"
+    "detailFile": "hs"
   },
   {
     "name": "Contentful Custom App Demo",
@@ -44,7 +45,7 @@
       "TypeScript",
       "React"
     ],
-    "detailFile": "contentful-app-demo"
+    "detailFile": "contentful-demo"
   },
   {
     "name": "Augmented Reality Prototype",
@@ -57,7 +58,7 @@
     "stack": [
       "ThreeJS"
     ],
-    "detailFile": "contentful-app-demo"
+    "detailFile": "ar-demo"
   },
   {
     "name": "Holiday Game Collection",
