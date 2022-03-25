@@ -337,7 +337,7 @@ const Home = () => {
         </MainAreaDIV>
 
         <DelightDIV scrolled={scrolled}>
-          <p>just focus on the breath.</p>
+          <p>focus on the breath.</p>
         </DelightDIV>
 
       </div>
