@@ -56,7 +56,7 @@ const SidebarASIDE = styled.aside`
   height: 100%;
 
   ${MEDIA_QUERIES.XL} {
-    padding: 80px;
+    padding: 67px 80px 0 80px;
   }
 
   .sidebar-content {
@@ -141,11 +141,14 @@ const DelightDIV = styled.div`
     position: fixed;
     width: 20%;
     bottom: 20px;
-    left: 60px;
+    left: 80px;
+    padding-left: 0;
     text-align: left;
   }
 @media (min-width: 1600px) {
-   right: 20px;
+   right: 40px;
+   padding-right: 0;
+   text-align: right;
    left: auto;
   }
   
@@ -153,6 +156,17 @@ const DelightDIV = styled.div`
 
 const SkillsDIV = styled.div`
   margin-bottom: 40px;
+  background: #fafafa;
+  padding: 10px 20px 20px 20px;
+  margin-bottom: 40px;
+  display: block;
+  border-radius: 8px;
+
+  ${MEDIA_QUERIES.XL} {
+    width: 90%;
+    max-width:700px;
+  }
+
   h4 {
     font-size: 1.5rem;
     line-height: 0;
@@ -161,12 +175,24 @@ const SkillsDIV = styled.div`
   ul {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
     list-style: none;
+    display: inline;
 
     ${MEDIA_QUERIES.L} {
-      flex-direction: row;
+      li {
+        display: inline;
+        
+        &:after {
+          color: ${theme.colors.lightGrey};
+          content: "•";
+          padding-left: 1rem;
+        }
+        &:last-of-type {
+          &:after {
+            content: '';
+          }
+          }/* end last-of-type */
+      }
     }
    
     li {
