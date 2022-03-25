@@ -91,9 +91,6 @@ const MainAreaDIV = styled.div`
       padding-left: 2rem;
     }
   }
-
- 
-
 `
 
 const TextBlock = styled.article`
@@ -128,7 +125,7 @@ const ProfilePicDIV = styled.div`
 `;
 
 const DelightDIV = styled.div`
-  background: rgba(255, 255, 255, ${props => props.scrolled / 100} );
+  background: rgba(255, 255, 255, 0.5 );
   width: 100%;
   position: sticky;
   bottom: 0;
@@ -139,13 +136,17 @@ const DelightDIV = styled.div`
     opacity: ${props => props.scrolled / 100};
   }
 
-  ${MEDIA_QUERIES.L} {
+  ${MEDIA_QUERIES.XL} {
     background: none;
     position: fixed;
     width: 20%;
     bottom: 20px;
-    right: 0;
+    left: 60px;
     text-align: left;
+  }
+@media (min-width: 1600px) {
+   right: 20px;
+   left: auto;
   }
   
 `;
