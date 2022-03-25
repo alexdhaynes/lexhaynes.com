@@ -1,17 +1,33 @@
 [
-    {
-        "title": "HTML",
-        "list": [
-            {
-                "image": "/images/icons/html.png",
-                "label": "Semantic HTML"
-            },
-            {
-                "image": "/images/icons/svg.png",
-                "label": "SVG Animation"
-            }
-        ]
-    },
+  {
+    "title": "JS",
+    "list": [
+        {
+            "image": "/images/icons/react.png",
+            "label": "React"
+        },
+        {
+            "image": "",
+            "label": "Vanilla JS"
+        },
+        {
+            "image": "",
+            "label": "TypeScript"
+        },
+        {
+            "image": "",
+            "label": "NextJS / Gatsby"
+        },
+        {
+            "image": "/images/icons/gsap.png",
+            "label": "GSAP"
+        },
+        {
+            "image": "/images/icons/node.png",
+            "label": "NodeJS"
+        }
+    ]
+},
     {
         "title": "CSS",
         "list": [
@@ -30,34 +46,18 @@
         ]
     },
     {
-        "title": "JS",
-        "list": [
-            {
-                "image": "/images/icons/react.png",
-                "label": "React"
-            },
-            {
-                "image": "",
-                "label": "Vanilla JS"
-            },
-            {
-                "image": "",
-                "label": "TypeScript"
-            },
-            {
-                "image": "",
-                "label": "NextJS / Gatsby"
-            },
-            {
-                "image": "/images/icons/gsap.png",
-                "label": "GSAP"
-            },
-            {
-                "image": "/images/icons/node.png",
-                "label": "NodeJS"
-            }
-        ]
-    },
+      "title": "HTML",
+      "list": [
+          {
+              "image": "/images/icons/html.png",
+              "label": "Semantic HTML"
+          },
+          {
+              "image": "/images/icons/svg.png",
+              "label": "SVG Animation"
+          }
+      ]
+  },
     {
         "title": "Back-End",
         "list": [
