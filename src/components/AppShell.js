@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Head from "next/head";
-import NavBar from "@components/NavBar";
-import Footer from "@components/Footer";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const GA_TRACKING_ID = "UA-40660950-4";
 
@@ -24,7 +24,7 @@ const AppShell = ({ title, children }) => {
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Sen:wght@400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Sen:wght@400;700&display=swap"
           rel="stylesheet"
         />
 

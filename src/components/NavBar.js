@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
-import navData from "@data/nav.json";
+import navData from "../data/nav.json";
 import useComponentVisible from "../hooks/useComponentVisible";
 
 const navLinks = navData.filter((item) => item.id !== "contact");

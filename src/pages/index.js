@@ -1,21 +1,22 @@
 import { useState } from "react"
 // components
-import { TeaserCard } from "@components/TeaserCard";
-import AppShell from "@components/AppShell";
-import SiteImage from "@components/SiteImage";
-import useScrollPosition from "@hooks/useScrollPosition"; 
+import { TeaserCard } from "../components/TeaserCard";
+import AppShell from "../components/AppShell";
+import SiteImage from "../components/SiteImage";
+import useScrollPosition from "../hooks/useScrollPosition"; 
 
-import portfolioData from "@data/portfolio.json";
-import socialData from "@data/social.json";
-import skillsData from "@data/skills.json";
+import portfolioData from "../data/portfolio.json";
+import socialData from "../data/social.json";
+import skillsData from "../data/skills.json";
 
 //css
 import styled, { css } from 'styled-components'
-import { MEDIA_QUERIES } from "src/constants";
-import { theme } from '@styles/globals.styles'
-import { useEffect } from "react/cjs/react.production.min";
+import { MEDIA_QUERIES } from "../constants";
+import { theme } from '../styles/globals.styles'
+import { useEffect } from "react";
 
 const pageStyle = css`
+  color: #222;
 
   ${MEDIA_QUERIES.L} {
     display: grid;
@@ -34,9 +35,10 @@ const pageStyle = css`
 
   a {
     text-decoration: none;
-    color: ${theme.colors.black};
+    color: #000;
+    position: relative;
     &:hover, &:focus, &:active {
-      
+      color: ${theme.colors.darkGrey};
     }
   }
 `
@@ -47,15 +49,21 @@ const SidebarASIDE = styled.aside`
   padding: 80px;
   height: 100%;
 
-  h2 {
-    font-weight: bold;
-    margin-top: 0;
+  .sidebar-content {
+    
+    h1 {
+    font-size: 4rem;
+    }
+
   }
+  
+ 
+
 `
 
 const MainAreaDIV = styled.div`
   grid-area: main;
-  padding: 80px 120px;
+  padding: 90px 120px;
   
 `
 
@@ -73,6 +81,9 @@ const SectionHeader = styled.h2`
  /* section header */
  font-family: ${theme.fonts.serif};
  margin-bottom: 2.15rem;
+ font-size: 2.5rem;
+ line-height: 3rem;
+
 `;
 
 const ProjectGridDIV = styled.div`
@@ -87,21 +98,62 @@ const ProfilePicDIV = styled.div`
 `;
 
 const DelightDIV = styled.div`
-  display: none;
+  width: 20%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: ${theme.colors.darkGrey};
+  opacity: ${props => props.scrolled / 100};
+
   ${MEDIA_QUERIES.L} {
-    display: block;
-    position: fixed;
+    width: 250px;
     bottom: 60px;
-    right: 120px;
-    opacity: 0.35;
+    right: 60px;
+  }
+  
+`;
+
+const SkillsDIV = styled.div`
+  margin-bottom: 40px;
+  h4 {
+    font-size: 1.5rem;
+    line-height: 0;
+    font-weight: 700;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    ${MEDIA_QUERIES.L} {
+      flex-direction: row;
+
+    }
+   
+    li {
+      padding-right: 1.25rem;
+      
+    }
   }
 `;
 
-const Home = () => {
 
+
+const Home = () => {
+  const scrollPos = useScrollPosition();
+  const [scrolled, setScrolled ] = useState(0);
+  
   useEffect(() => {
-    console.log("hi");
-  })
+    const scrollHeight = document.body.scrollHeight;
+    setScrolled(
+      Math.floor(scrollPos / scrollHeight * 100)
+    )
+  }, [scrollPos])
+
+
+ 
 
   return (
     <AppShell title="Alex Haynes: Front-End Developer">
@@ -110,7 +162,8 @@ const Home = () => {
         
         {/* SIDEBAR SECTION */}
         <SidebarASIDE>
-              <h1>
+          <div className="sidebar-content">
+            <h1>
                 Alex Haynes
               </h1>
               <h2>Front End Developer</h2>
@@ -138,6 +191,8 @@ const Home = () => {
 
               <p>Front End Dev @ <a href="https://www.helpscout.com" className="underline">Help Scout</a></p>
               <p>📍 Ithaca, NY</p>
+          </div>
+              
            
 
         </SidebarASIDE>
@@ -203,20 +258,20 @@ const Home = () => {
           <Section id="skills">
             <SectionHeader>My daily toolkit</SectionHeader>
               {skillsData.map(node => (
-                <div key={`list-${node.title}`}>
-                  <h3>{node.title}</h3>
+                <SkillsDIV key={`list-${node.title}`}>
+                  <h4>{node.title}</h4>
                   <ul>
                   {node.list.map(item => (
-                      <p key={`skill-${node.label}`}>{item.label}</p>
+                      <li key={`skill-${node.label}`}>{item.label}</li>
                   ))} 
                   </ul>
-                </div>
+                </SkillsDIV>
               ))}
           </Section>
 
         </MainAreaDIV>
 
-        <DelightDIV>
+        <DelightDIV scrolled={scrolled}>
           <p>just focus on the breath.</p>
         </DelightDIV>
 
