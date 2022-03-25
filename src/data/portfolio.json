@@ -4,7 +4,6 @@
     "href": "https://intheworks.helpscout.com",
     "image": "/images/portfolio/itw.png",
     "tags": [
-      "Website",
       "Contributor"
     ],
     "stack": [
@@ -12,16 +11,15 @@
       "Contentful",
       "React",
       "Styled Components",
-      "React Spring"
+      "react-spring"
     ],
-    "detailFile": "itw"
+    "caseStudyId": "itw"
   },
   {
-    "name": "Help Scout - Marketing Site",
+    "name": "Help Scout Marketing Site",
     "href": "https://www.helpscout.com",
     "image": "/images/portfolio/helpscout.png",
     "tags": [
-      "Website",
       "Contributor"
     ],
     "stack": [
@@ -30,7 +28,7 @@
       "React",
       "Styled Components"
     ],
-    "detailFile": "hs"
+    "caseStudyId": "hs"
   },
   {
     "name": "Contentful Custom App Demo",
@@ -38,41 +36,39 @@
     "image": "/images/portfolio/contentful-demo.png",
     "tags": [
       "Demo",
-      "Project lead"
+      "App"
     ],
     "stack": [
       "Contentful API",
       "TypeScript",
       "React"
     ],
-    "detailFile": "contentful-demo"
+    "caseStudyId": "contentful-demo"
   },
   {
     "name": "Augmented Reality Prototype",
     "href": "https://ar-mardi-gras-mask.netlify.app/",
     "image": "/images/portfolio/ar-mask.jpg",
     "tags": [
-      "Demo",
-      "Project Lead"
+      "Demo"
     ],
     "stack": [
       "ThreeJS"
     ],
-    "detailFile": "ar-demo"
+    "caseStudyId": "ar-demo"
   },
   {
     "name": "Holiday Game Collection",
     "href": "https://everly-jamboree-438f3e.netlify.com/",
     "image": "/images/portfolio/fl-lotto.jpg",
     "tags": [
-      "Demo",
-      "Project lead"
+      "Demo"
     ],
     "stack": [
       "Netlify",
       "Jekyll",
       "GSAP"
     ],
-    "detailFile": "fl-lotto-demo"
+    "caseStudyId": "fl-lotto-demo"
   }
 ]

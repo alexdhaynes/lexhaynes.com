@@ -1,44 +1,77 @@
 
-import Icon from '@components/Icon'
 import Link from 'next/link'
 
-const TeaserCard = ({name, href, image, tags, case_study_link}) => {
-    return (
-        <div className="block transform hover:scale-110 transition-transform">
-        <div className=" w-full mb-8 md:mb-4 space-y-3 mx-auto bg-white table">
-        
-            <a className="block" title={name} href={href} target="_blank" rel="noreferrer">
-                <div className="relative mx-auto overflow-hidden rounded-lg shadow-lg
-                    w-3/4 h-36  
-                    md:w-60 md:h-32
-                    lg:w-72 lg:h-40
-                    ">
-                    <Icon   
-                        src={image}
-                        alt={name}
-                    />
-                </div>
-            
-            <h3 className="pt-2 font-bold text-lg text-center w-full text-gray-700 hover:underline">{name}</h3>
-        </a>
+//css
+import styled, { css } from 'styled-components'
+import { MEDIA_QUERIES } from 'src/constants'
+import SiteImage from './SiteImage';
 
-            {case_study_link && <>
-                <Link href={case_study_link}> 
-                    <a className="block font-bold text-red-400 text-sm pb-2 leading-tight underline hover:text-red-300 text-center">View Case Study</a>
-                </Link>
-            </>
-            }
-           
-            
-            <div className="flex justify-center">
-            {
-                tags.map((item, i) => (
-                    <span key={`project-category-${i}`} className="rounded-3xl px-4 py-1 mr-2 bg-yellow-100 text-gray-600 font-bold text-xs">{item}</span>
-                ))
-            }
-            </div>
-        </div>
-    </div>
+const TeaserCardDIV = styled.div`
+  margin-bottom: 30px;
+  position: relative;
+  
+  ${MEDIA_QUERIES.L} {
+    max-width: 800px;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "image name"
+    "image tags"
+    ". stack"
+    ". ."
+    ". .";
+    grid-column-gap: 40px;
+  }
+  .teaser-card-image {
+    position: relative;
+    width: 300px;
+    height: 168.75px;
+    border-radius: 4px;
+    margin: 12px;
+    grid-area: image;
+  }
+
+  h3 {
+    grid-area: name;
+  }
+
+
+  .teaser-card-tags {
+    grid-area: tags;
+    span {
+      padding: 4px;
+    }
+  }
+
+  .teaser-card-stack {
+    grid-area: stack;
+    span {
+      padding-right: 4px;
+    }
+  }
+
+ 
+`;
+
+const TeaserCard = ({name, href, image, tags, stack, caseStudyId}) => {
+    return (
+       <TeaserCardDIV>
+          <div className="teaser-card-image">
+              <SiteImage src={image} alt={name}/>
+          </div>
+          <div className="teaser-card-tags">
+              {tags.map((tag, i) => (
+                <span key={`teaser-card-tag-${i}`}>{tag}</span>
+              ))}
+          </div>
+          <div className="teaser-card-stack">
+              {stack.map((tech, i) => (
+                <span key={`teaser-card-stack-${i}`}>{tech}</span>
+              ))}
+          </div>
+          <h3>{name}</h3>
+       </TeaserCardDIV>
     )
 }
 

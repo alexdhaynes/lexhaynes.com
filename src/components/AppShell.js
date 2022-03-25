@@ -1,13 +1,13 @@
+import styled from "styled-components";
 import Head from "next/head";
 import NavBar from "@components/NavBar";
 import Footer from "@components/Footer";
-import ScrollToTop from "@components/ScrollToTop";
 
 const GA_TRACKING_ID = "UA-40660950-4";
 
 const AppShell = ({ title, children }) => {
   return (
-    <main>
+    <>
       <Head>
         <title>{title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -45,14 +45,12 @@ const AppShell = ({ title, children }) => {
         />
       </Head>
 
-      <NavBar />
-
-      {children}
-
-      <ScrollToTop />
-
+{/*       <NavBar />
+ */}      <main>
+        {children}
+      </main>
       <Footer />
-    </main>
+    </>
   );
 };
 

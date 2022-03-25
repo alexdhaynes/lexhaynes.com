@@ -9,7 +9,7 @@ const bgStyle = css`
     background-size:cover;
 `
 
-const Icon = ({src, alt}) => {
+const SiteImage = ({src, alt}) => {
     const [loaded, setLoaded ] = useState(false)
     
     const onLoadCallback = () => {
@@ -28,4 +28,4 @@ const Icon = ({src, alt}) => {
   
 }
 
-export default Icon
+export default SiteImage

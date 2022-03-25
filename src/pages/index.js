@@ -1,13 +1,9 @@
 import { useState } from "react"
 // components
-import { DescriptiveBlock } from "@components/StatementBlock";
-import { LabelledBlock } from "@components/StatementBlock";
-import { ListCard } from "@components/ListCard";
 import { TeaserCard } from "@components/TeaserCard";
 import AppShell from "@components/AppShell";
-import Button from "@components/Button";
-import Icon from "@components/Icon";
-import styles from "@styles/Index.module.css";
+import SiteImage from "@components/SiteImage";
+import useScrollPosition from "@hooks/useScrollPosition"; 
 
 import portfolioData from "@data/portfolio.json";
 import socialData from "@data/social.json";
@@ -15,147 +11,216 @@ import skillsData from "@data/skills.json";
 
 //css
 import styled, { css } from 'styled-components'
+import { MEDIA_QUERIES } from "src/constants";
+import { theme } from '@styles/globals.styles'
+import { useEffect } from "react/cjs/react.production.min";
 
-const sectionStyles = css`
-  margin: 80px auto;
-  position:relative;
+const pageStyle = css`
+
+  ${MEDIA_QUERIES.L} {
+    display: grid;
+    grid-template-columns: minmax(auto, 500px) 3fr;
+    grid-template-areas:
+      "sidebar main";
+
+      aside {
+        position: fixed; 
+      }
+  }
+
+  p, li, a, div {
+    line-height: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: ${theme.colors.black};
+    &:hover, &:focus, &:active {
+      
+    }
+  }
 `
-export const SectionHero = styled.section`
-  ${sectionStyles}
-  border:solid blue 1px;
+
+const SidebarASIDE = styled.aside`
+  background: #fafafa;
+  grid-area: sidebar;
+  padding: 80px;
+  height: 100%;
+
+  h2 {
+    font-weight: bold;
+    margin-top: 0;
+  }
+`
+
+const MainAreaDIV = styled.div`
+  grid-area: main;
+  padding: 80px 120px;
+  
+`
+
+const TextBlock = styled.article`
+  max-width: 680px;
+  line-height: 1.35;
+`
+
+const Section = styled.section`
+  position:relative;
+  margin: 0 auto 6rem auto;
 `;
 
-export const Section = styled.section`
-   ${sectionStyles}
-   border:solid red 1px;
+const SectionHeader = styled.h2`
+ /* section header */
+ font-family: ${theme.fonts.serif};
+ margin-bottom: 2.15rem;
 `;
 
-export const SectionHeader = styled.h2`
-  color: red;
+const ProjectGridDIV = styled.div`
+  
 `;
 
-export const ProfilePicDIV = styled.div`
+const ProfilePicDIV = styled.div`
   width:150px;
   height:150px;
-  border:dashed green 3px;
+  margin: 20px 0;
   position: relative;
 `;
 
-const FEATURED_PROJECTS_LENGTH = 3;
+const DelightDIV = styled.div`
+  display: none;
+  ${MEDIA_QUERIES.L} {
+    display: block;
+    position: fixed;
+    bottom: 60px;
+    right: 120px;
+    opacity: 0.35;
+  }
+`;
 
 const Home = () => {
-  const [showAllProjects, setShowAllProjects] = useState(false);
+
+  useEffect(() => {
+    console.log("hi");
+  })
 
   return (
     <AppShell title="Alex Haynes: Front-End Developer">
-      {/* HERO SECTION */}
-      <SectionHero>
-            <h1>
-              Front-End Developer @<a href="https://www.helpscout.com" className="underline">Help Scout</a>
-            </h1>
-            {socialData.map((item, i) => (
-              <a
-                key={`social-${i}`}
-                className="underline hover:no-underline"
-                style={{paddingRight: '16px'}}
-                href={item.href}
-                title={item.name}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {item.name}
-              </a>
-            ))}
-            <p>Ithaca, NY for now!</p>
-              
-            <ProfilePicDIV>
-              <Icon
-                src="/images/jpgs/profile.jpg"
-                alt="Alexandra Haynes: Profile Picture"
-              />
-            </ProfilePicDIV>
-          
-      </SectionHero>
 
-      {/* INTRO SECTION */}
-      <Section bgInner="white" id="intro">
-        <SectionHeader>Building cool stuff for screens</SectionHeader>
-
-        <div className={`w-11/12 mx-auto`}>
-          <p>
-            I’m a highly creative Front-End Developer who builds delightful experiences for the web. I build interactions, components, landing pages, and websites that delight users. I work closely with stakeholders to implement thoughtful UI, and componentize and document code for easy reusability among developers and codebases.
-          </p>
-        </div>
-      </Section>
-      
-      {/* PORTFOLIO SECTION */}
-      <Section id="portfolio">
-        <SectionHeader>Featured projects</SectionHeader>
-        <div className="md:grid md:grid-cols-2 md:gap-4 xl:grid-cols-3">
-          {portfolioData.slice(0, FEATURED_PROJECTS_LENGTH).map(node => {
-             return <TeaserCard
-                  key={`Project-${node.name}`}
-                  name={node.name}
-                  href={node.href}
-                  image={node.image}
-                  tags={node.tags}
-                  case_study_link={node.case_study_link || null}
+      <div css={pageStyle}>
+        
+        {/* SIDEBAR SECTION */}
+        <SidebarASIDE>
+              <h1>
+                Alex Haynes
+              </h1>
+              <h2>Front End Developer</h2>
+                      
+              <ProfilePicDIV>
+                <SiteImage
+                  src="/images/jpgs/profile.jpg"
+                  alt="Alexandra Haynes: Profile Picture"
                 />
-            })}
-            </div>
-          {
-            showAllProjects && (
-              <>
-              <h2>Interactive ad demos (Requires adblocker to be off to view)</h2>
-              <div className="md:grid md:grid-cols-2 md:gap-4 xl:grid-cols-3">
-                {
-                  portfolioData.slice(FEATURED_PROJECTS_LENGTH, portfolioData.length).map(node => ( 
-                  <TeaserCard
-                    key={`Project-${node.name}`}
-                    name={node.name}
-                    href={node.href}
-                    image={node.image}
-                    tags={node.tags}
-                    case_study_link={node.case_study_link || null}
-                  />
-                  ))
-                }
-              </div>
-              </>
-            )
-          }
+              </ProfilePicDIV>
 
-          { showAllProjects === false &&
-            <Button onClick={() => {
-              setShowAllProjects(true);
-            }}>See All Projects</Button>
-          }
-          
-      </Section>
+              {socialData.map((item, i) => (
+                <a
+                  key={`social-${i}`}
+                  className="underline hover:no-underline"
+                  style={{paddingRight: '16px'}}
+                  href={item.href}
+                  title={item.name}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {item.name}
+                </a>
+              ))}
 
-      {/* SKILLS SECTION */}
-      <Section id="skills">
-        <SectionHeader>My toolkit</SectionHeader>
-          {skillsData.map(node => (
-            <div key={`list-${node.title}`}>
-              <h3>{node.title}</h3>
+              <p>Front End Dev @ <a href="https://www.helpscout.com" className="underline">Help Scout</a></p>
+              <p>📍 Ithaca, NY</p>
+           
+
+        </SidebarASIDE>
+        
+        <MainAreaDIV>
+          {/* INTRO SECTION */}
+          <Section bgInner="white" id="intro">
+            <SectionHeader>I build cool stuff for screens</SectionHeader>
+
+            <TextBlock>
+              <p>
+                I’m a creative Front-End Developer who builds delightful experiences for the web.
+              </p>
+
+              <h3>At Work</h3>
               <ul>
-              {node.list.map(item => (
-                  <p key={`skill-${node.label}`}>{item.label}</p>
-              ))} 
-              </ul>
-            </div>
-          ))}
-      </Section>
+                <li>Maintain, improve, and document codebases</li>
+                <li>Explain technical things to non-technical people (nicely)</li>
+                <li>Build components, landing pages, and websites from specs</li>
+                <li>Write code that future developers (and future me) will understand</li>
+                <li>Think a lot about naming things</li>
+                <li>Iterate!</li>
+            </ul>
 
-      {/* ABOUT SECTION */}
-      <Section id="about">
-        <SectionHeader>What I care about</SectionHeader>
-          <p>
-            I’m passionate about living in a way that does no harm to living
-            beings, and does minimal or no harm to the environment.
-          </p>
-      </Section>
+            <h3> Outside of Work</h3>
+              <p>
+                I like to hike, explore the forest 🌲, make stuff out of wood, draw, learn new things, and work on my meditation practice. I enjoy tea 🍵 and tea brewing. 
+              </p>
+            </TextBlock>
+          </Section>
+
+            {/* ABOUT SECTION */}
+            <Section>
+            <SectionHeader>What I care about</SectionHeader>
+              <TextBlock>
+                <p>
+                  I’m passionate about living in a way that does no harm to living
+                  beings, and no harm to the environment.
+                </p>
+              </TextBlock>
+          </Section>
+          
+          {/* PORTFOLIO SECTION */}
+          <Section id="portfolio">
+            <SectionHeader>Featured projects</SectionHeader>
+            <ProjectGridDIV>
+              {portfolioData.map(node => {
+                return <TeaserCard
+                      key={`Project-${node.name}`}
+                      name={node.name}
+                      stack={node.stack}
+                      href={node.href}
+                      image={node.image}
+                      tags={node.tags}
+                      case_study_link={node.case_study_link || null}
+                    />
+                })}
+              </ProjectGridDIV>
+              
+          </Section>
+
+          {/* SKILLS SECTION */}
+          <Section id="skills">
+            <SectionHeader>My daily toolkit</SectionHeader>
+              {skillsData.map(node => (
+                <div key={`list-${node.title}`}>
+                  <h3>{node.title}</h3>
+                  <ul>
+                  {node.list.map(item => (
+                      <p key={`skill-${node.label}`}>{item.label}</p>
+                  ))} 
+                  </ul>
+                </div>
+              ))}
+          </Section>
+
+        </MainAreaDIV>
+
+        <DelightDIV>
+          <p>just focus on the breath.</p>
+        </DelightDIV>
+
+      </div>
     </AppShell>
   );
 };

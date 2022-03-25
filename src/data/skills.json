@@ -16,16 +16,16 @@
         "title": "CSS",
         "list": [
             {
-                "image": "/images/icons/styledComponents.png",
-                "label": "CSS-in-JS"
-            },
-            {
-                "image": "/images/icons/tailwind.png",
+                "image": "",
                 "label": "Styled Components"
             },
             {
-                "image": "/images/icons/bootstrap.png",
+                "image": "",
                 "label": "CSS Animation"
+            },
+            {
+                "image": "",
+                "label": "Modern CSS"
             }
         ]
     },
@@ -41,7 +41,7 @@
                 "label": "TypeScript"
             },
             {
-                "image": "/images/icons/gatsby.png",
+                "image": "",
                 "label": "NextJS / Gatsby"
             },
             {
@@ -58,12 +58,8 @@
         "title": "Back-End",
         "list": [
             {
-                "image": "/images/icons/mongodb.png",
-                "label": "MongoDB / SQL"
-            },
-            {
-                "image": "/images/icons/express.png",
-                "label": "ExpressJS"
+                "image": "",
+                "label": "REST APIs"
             }
         ]
     },
