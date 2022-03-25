@@ -79,11 +79,20 @@ const MainAreaDIV = styled.div`
   grid-area: main;
   overflow-x: hidden;
 
-  padding: 4rem;
+  padding: 40px;
+
+  ul {
+    padding-left: 1rem;
+  }
 
   ${MEDIA_QUERIES.XL} {
-    padding: 90px 0 0 90px;
+    padding: 90px 0 0 160px;
+    ul {
+      padding-left: 2rem;
+    }
   }
+
+ 
 
 `
 
@@ -157,7 +166,6 @@ const SkillsDIV = styled.div`
 
     ${MEDIA_QUERIES.L} {
       flex-direction: row;
-
     }
    
     li {
