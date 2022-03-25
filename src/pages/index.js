@@ -15,16 +15,27 @@ import { MEDIA_QUERIES } from "../constants";
 import { theme } from '../styles/globals.styles'
 import { useEffect } from "react";
 
+const defaultTextLinkStyle = css`
+  text-decoration: underline;
+    color: ${theme.colors.darkGrey};
+    position: relative;
+    &:hover, &:focus, &:active {
+      color: ${theme.colors.lightGrey};
+    }
+`
+
 const pageStyle = css`
   color: #222;
 
-  ${MEDIA_QUERIES.L} {
+  ${MEDIA_QUERIES.XL} {
     display: grid;
     grid-template-columns: minmax(auto, 500px) 3fr;
     grid-template-areas:
       "sidebar main";
+  }
 
-      aside {
+  @media (min-width: 1380px) {
+    aside {
         position: fixed; 
       }
   }
@@ -33,14 +44,9 @@ const pageStyle = css`
     line-height: 2rem;
   }
 
-  a {
-    text-decoration: none;
-    color: #000;
-    position: relative;
-    &:hover, &:focus, &:active {
-      color: ${theme.colors.darkGrey};
+  p a {
+      ${defaultTextLinkStyle}
     }
-  }
 `
 
 const SidebarASIDE = styled.aside`
@@ -50,9 +56,12 @@ const SidebarASIDE = styled.aside`
   height: 100%;
 
   .sidebar-content {
-    
     h1 {
     font-size: 4rem;
+    line-height: 4.25rem;
+    }
+    h2 {
+      font-weight: 500;
     }
 
     img {
@@ -60,19 +69,23 @@ const SidebarASIDE = styled.aside`
     }
 
   }
-  
- 
-
 `
 
 const MainAreaDIV = styled.div`
   grid-area: main;
-  padding: 90px 120px;
-  
+  overflow-x: hidden;
+
+  padding: 4rem;
+
+  ${MEDIA_QUERIES.XL} {
+    padding: 90px 0 0 90px;
+  }
+
 `
 
 const TextBlock = styled.article`
   max-width: 680px;
+  width: 100%;
   line-height: 1.35;
 `
 
@@ -84,9 +97,9 @@ const Section = styled.section`
 const SectionHeader = styled.h2`
  /* section header */
  font-family: ${theme.fonts.serif};
- margin-bottom: 2.15rem;
+ padding-bottom: 2rem;
  font-size: 2.5rem;
- line-height: 3rem;
+ line-height: 2.75rem;
 
 `;
 
@@ -102,14 +115,14 @@ const ProfilePicDIV = styled.div`
 `;
 
 const DelightDIV = styled.div`
-  width: 20%;
+  width: 16%;
   position: fixed;
   bottom: 20px;
   right: 20px;
   color: ${theme.colors.darkGrey};
   opacity: ${props => props.scrolled / 100};
 
-  ${MEDIA_QUERIES.L} {
+  ${MEDIA_QUERIES.XL} {
     width: 250px;
     bottom: 60px;
     right: 60px;
@@ -178,20 +191,22 @@ const Home = () => {
                   alt="Alexandra Haynes: Profile Picture"
                 />
               </ProfilePicDIV>
-
-              {socialData.map((item, i) => (
-                <a
-                  key={`social-${i}`}
-                  className="underline hover:no-underline"
-                  style={{paddingRight: '16px'}}
-                  href={item.href}
-                  title={item.name}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {item.name}
-                </a>
-              ))}
+              <p>
+                {socialData.map((item, i) => (
+                  <a
+                    key={`social-${i}`}
+                    className="underline hover:no-underline"
+                    style={{paddingRight: '16px'}}
+                    href={item.href}
+                    title={item.name}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </p>
+       
 
               <p>Front End Dev @ <a href="https://www.helpscout.com" className="underline">Help Scout</a></p>
               <p>📍 Ithaca, NY</p>
