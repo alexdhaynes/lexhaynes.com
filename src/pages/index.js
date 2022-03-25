@@ -55,6 +55,10 @@ const SidebarASIDE = styled.aside`
     font-size: 4rem;
     }
 
+    img {
+      border-radius: 6px;
+    }
+
   }
   
  
