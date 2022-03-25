@@ -52,8 +52,12 @@ const pageStyle = css`
 const SidebarASIDE = styled.aside`
   background: #fafafa;
   grid-area: sidebar;
-  padding: 80px;
+  padding: 30px;
   height: 100%;
+
+  ${MEDIA_QUERIES.XL} {
+    padding: 80px;
+  }
 
   .sidebar-content {
     h1 {
@@ -99,7 +103,7 @@ const SectionHeader = styled.h2`
  font-family: ${theme.fonts.serif};
  padding-bottom: 2rem;
  font-size: 2.5rem;
- line-height: 2.75rem;
+ line-height: 3rem;
 
 `;
 
@@ -115,17 +119,24 @@ const ProfilePicDIV = styled.div`
 `;
 
 const DelightDIV = styled.div`
-  width: 16%;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+  background: rgba(255, 255, 255, ${props => props.scrolled / 100} );
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  padding: 0.25rem;
+  text-align: center;
   color: ${theme.colors.darkGrey};
-  opacity: ${props => props.scrolled / 100};
+  p {
+    opacity: ${props => props.scrolled / 100};
+  }
 
-  ${MEDIA_QUERIES.XL} {
-    width: 250px;
-    bottom: 60px;
-    right: 60px;
+  ${MEDIA_QUERIES.L} {
+    background: none;
+    position: fixed;
+    width: 20%;
+    bottom: 20px;
+    right: 0;
+    text-align: left;
   }
   
 `;

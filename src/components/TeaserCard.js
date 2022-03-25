@@ -2,14 +2,17 @@
 import { useEffect, useState } from 'react';
 //css
 import styled, { css } from 'styled-components'
-import { MEDIA_QUERIES } from '../../src/constants'
+import { BREAKPOINTS, MEDIA_QUERIES } from '../../src/constants'
 import SiteImage from './SiteImage';
 import { theme } from '../styles/globals.styles';
 
 const TeaserCardDIV = styled.div`
   position: relative;
   width: 95%;
-  max-width: 800px;
+
+  ${MEDIA_QUERIES.L} {
+    max-width: 800px;
+  }
   
   &:hover {
     cursor: pointer;
@@ -66,11 +69,18 @@ const TeaserCardInnerDIV = styled.div`
   .teaser-card-image {
     position: relative;
     display: block;
-    width: 300px;
-    height: 168px;
-    border-radius: 4px;
+    width: 100%;
+    padding-top: 56.25%;
+
+    ${MEDIA_QUERIES.L} {
+      width: 300px;
+      height: 168px;
+    }
     grid-area: image;
     margin: 0;
+    img {
+      border-radius: 4px;
+    }
   }
 
 
@@ -132,8 +142,11 @@ const TeaserCardInnerDIV = styled.div`
     }
 
     span {
-      padding-right: 4px;
-      color: ${theme.colors.black};
+      padding: 0.25rem 0.75rem;
+      margin: 0 0.5rem 0 0;
+      border-radius: 8px;
+      color: #fff;
+      background: ${theme.colors.lightGrey};
     }
   }
   
@@ -143,18 +156,33 @@ const TeaserCardInnerDIV = styled.div`
     align-self: flex-start;
     max-width: 75%;
     margin-top: 1rem;
+    
     span {
-      padding: 0 12px 0 0 ;
-      &:after {
+      padding-right: 1rem;
+      display: block;
+      &:before {
+          color: ${theme.colors.lightGrey};
+          content: '•';
+          position: relative;
+          padding-right: 0.5rem;
+        }
+      ${MEDIA_QUERIES.L} {
+        display: inline;
+        &:before {
+          display: none;
+        }
+        &:after {
         color: ${theme.colors.lightGrey};
-        content: '•';
-        margin-left: 16px;
+        content: "•";
+        padding-left: 1rem;
       }
-      &:last-of-type {
+       &:last-of-type {
          &:after {
           content: '';
          }
         }/* end last-of-type */
+      }
+
       }/* end span */
     }/* end .teaser-card-stack */
 
@@ -162,7 +190,6 @@ const TeaserCardInnerDIV = styled.div`
       width: 100%;
       span {
         font-size: 1.15rem;
-        color: ${theme.colors.black};
       }
     }
   
@@ -182,13 +209,11 @@ const TeaserCard = ({name, href, image, tags, stack}) => {
                 <span className="visit-text">Visit</span>
               </div>
               <div className="teaser-card-tags">
-                  <p className="teaser-card-label">Role:&nbsp;</p>
                   {tags.map((tag, i) => (
                     <span key={`teaser-card-tag-${i}`}>{tag}</span>
                   ))}
               </div>
               <div className="teaser-card-stack">
-                  <p className="teaser-card-label">Stack:&nbsp;</p>
                   {stack.map((tech, i) => (
                     <span key={`teaser-card-stack-${i}`}>{tech}</span>
                   ))}
