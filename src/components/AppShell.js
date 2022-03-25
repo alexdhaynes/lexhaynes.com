@@ -27,7 +27,7 @@ const AppShell = ({ title, children }) => {
           href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Sen:wght@400;700&display=swap"
           rel="stylesheet"
         />
-         <link rel="shortcut icon" href="/favicon.ico" />
+         <link rel="shortcut icon" href="/favicon.png" />
 
         {/* Analytics */}
         <script
