@@ -17,16 +17,17 @@ const AppShell = ({ title, children }) => {
           property="og:description"
           content="Front-End Developer profile of Alexandra Haynes. Personal portfolio site with latest projects."
         />
-        <meta property="og:url" content="https://lexhaynes.com" />
+        <meta property="og:url" content="https://alexhaynes.io" />
         <meta
           property="og:image"
-          content="https://lexhaynes.com/images/meta/meta.png"
+          content="https://alexhaynes.io/images/meta/meta.png"
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Sen:wght@400;700&display=swap"
           rel="stylesheet"
         />
+         <link rel="shortcut icon" href="/favicon.ico" />
 
         {/* Analytics */}
         <script
