@@ -125,7 +125,8 @@ const ProfilePicDIV = styled.div`
 `;
 
 const DelightDIV = styled.div`
-  background: rgba(255, 255, 255, 0.5 );
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 48%, rgba(255,255,255,0) 100%);
   width: 100%;
   position: sticky;
   bottom: 0;
