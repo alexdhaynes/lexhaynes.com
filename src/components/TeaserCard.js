@@ -79,7 +79,9 @@ display: grid;
 
   .teaser-card-tags {
     grid-area: tags;
-    color: ${theme.colors.lightGrey};
+    margin-top: 20px;
+
+
     span {
       padding-right: 4px;
     }
@@ -89,6 +91,8 @@ display: grid;
   .teaser-card-stack {
     grid-area: stack;
     align-self: flex-end;
+    max-width: 300px;
+    margin-top: 20px;
     span {
       padding: 0 12px 0 0 ;
       font-size: 1.05rem;

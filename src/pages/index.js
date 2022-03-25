@@ -261,8 +261,8 @@ const Home = () => {
                 <SkillsDIV key={`list-${node.title}`}>
                   <h4>{node.title}</h4>
                   <ul>
-                  {node.list.map(item => (
-                      <li key={`skill-${node.label}`}>{item.label}</li>
+                  {node.list.map((item, i) => (
+                      <li key={`skill-${i}`}>{item.label}</li>
                   ))} 
                   </ul>
                 </SkillsDIV>
