@@ -30,14 +30,18 @@
         ]
     },
     {
-        "title": "Javascript/TypeScript",
+        "title": "JS",
         "list": [
             {
                 "image": "/images/icons/react.png",
                 "label": "React"
             },
             {
-                "image": "/images/icons/node.png",
+                "image": "",
+                "label": "Vanilla JS"
+            },
+            {
+                "image": "",
                 "label": "TypeScript"
             },
             {
@@ -46,7 +50,7 @@
             },
             {
                 "image": "/images/icons/gsap.png",
-                "label": "GSAP (Greensock)"
+                "label": "GSAP"
             },
             {
                 "image": "/images/icons/node.png",
@@ -69,10 +73,6 @@
             {
                 "image": "/images/icons/contentful.png",
                 "label": "Contentful"
-            },
-            {
-                "image": "/images/icons/wordpress.png",
-                "label": "Wordpress"
             },
             {
                 "image": "/images/icons/netlify.png",
