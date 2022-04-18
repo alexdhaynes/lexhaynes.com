@@ -39,6 +39,14 @@ class CustomDocument extends Document {
             content="initial-scale=1.0, width=device-width"
           />
           <meta
+            property="title"
+            content="Alex Haynes: Front End Developer"
+          />
+          <meta
+            property="description"
+            content="Front-End Developer profile of Alexandra Haynes. Personal portfolio site with latest projects."
+          />
+          <meta
             property="og:title"
             content="Alex Haynes: Front End Developer"
           />
