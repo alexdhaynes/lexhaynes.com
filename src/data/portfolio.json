@@ -31,21 +31,6 @@
     "caseStudyId": "hs"
   },
   {
-    "name": "Contentful Custom App Demo",
-    "href": "https://github.com/alexhayneshs/contentful-conditional-fields-demo",
-    "image": "/images/portfolio/contentful-demo.png",
-    "tags": [
-      "Demo",
-      "App"
-    ],
-    "stack": [
-      "Contentful API",
-      "TypeScript",
-      "React"
-    ],
-    "caseStudyId": "contentful-demo"
-  },
-  {
     "name": "Augmented Reality Prototype",
     "href": "https://ar-mardi-gras-mask.netlify.app/",
     "image": "/images/portfolio/ar-mask.jpg",
