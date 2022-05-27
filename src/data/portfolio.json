@@ -41,19 +41,5 @@
       "ThreeJS"
     ],
     "caseStudyId": "ar-demo"
-  },
-  {
-    "name": "Holiday Game Collection",
-    "href": "https://everly-jamboree-438f3e.netlify.com/",
-    "image": "/images/portfolio/fl-lotto.jpg",
-    "tags": [
-      "Demo"
-    ],
-    "stack": [
-      "Netlify",
-      "Jekyll",
-      "GSAP"
-    ],
-    "caseStudyId": "fl-lotto-demo"
   }
 ]
