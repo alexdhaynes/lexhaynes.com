@@ -1,9 +1,9 @@
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import Image from 'next/image';
 //css
 import styled, { css } from 'styled-components'
-import { BREAKPOINTS, MEDIA_QUERIES } from '../../src/constants'
-import SiteImage from './SiteImage';
+import { MEDIA_QUERIES } from '../../src/constants'
 import { theme } from '../styles/globals.styles';
 
 const TeaserCardDIV = styled.div`
@@ -41,7 +41,7 @@ const TeaserCardInnerDIV = styled.div`
   ${(props) => {
       if (props.hovered) {
         return css`
-          filter: brightness(75%);
+          filter: brightness(80%);
           transition: filter 0.25s;
         
         @media (min-width: 1500px) {
@@ -60,6 +60,7 @@ const TeaserCardInnerDIV = styled.div`
   grid-template-areas: "image"
   "image"
   "name "
+  "description"
   "tags"
   "stack"; 
 
@@ -70,26 +71,26 @@ const TeaserCardInnerDIV = styled.div`
     position: relative;
     display: block;
     width: 100%;
-    padding-top: 56.25%;
+    height: auto;
+    grid-area: image;
+    margin-bottom: 40px;
+    border-radius: 5px;
 
-    ${MEDIA_QUERIES.L} {
+    ${MEDIA_QUERIES.XL} {
       width: 300px;
       height: 168px;
-    }
-    grid-area: image;
-    margin: 0;
-    img {
-      border-radius: 4px;
+      margin-bottom: 0;
     }
   }
 
 
-  ${MEDIA_QUERIES.L} {
+  ${MEDIA_QUERIES.XL} {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-rows: auto;
     grid-template-areas: 
     "image name"
+    "image description"
     "image tags"
     "image stack";
    
@@ -100,7 +101,7 @@ const TeaserCardInnerDIV = styled.div`
   .teaser-card-name {
     grid-area: name;
     position: relative;
-    margin-top: 30px;
+    margin: 0;
     ${MEDIA_QUERIES.L} {
       margin-top: 0;
     }
@@ -110,7 +111,7 @@ const TeaserCardInnerDIV = styled.div`
     }
     .visit-text {
       margin-left: 20px;
-      color: ${theme.colors.lightGrey};
+      color: ${theme.colors.accentDark};
       font-size: 1.15rem;
       position: absolute;
       right: 0;
@@ -124,6 +125,10 @@ const TeaserCardInnerDIV = styled.div`
   }
 
  
+  .teaser-card-description {
+    grid-area: description;
+  
+  }
 
   .teaser-card-label {
     color: ${theme.colors.defaultGrey};
@@ -146,7 +151,7 @@ const TeaserCardInnerDIV = styled.div`
       margin: 0 0.5rem 0 0;
       border-radius: 8px;
       color: #fff;
-      background: ${theme.colors.lightGrey};
+      background: ${theme.colors.accentDark};
     }
   }
   
@@ -161,7 +166,7 @@ const TeaserCardInnerDIV = styled.div`
       padding-right: 1rem;
       display: block;
       &:before {
-          color: ${theme.colors.lightGrey};
+          color: ${theme.colors.accentDark};
           content: '•';
           position: relative;
           padding-right: 0.5rem;
@@ -172,7 +177,7 @@ const TeaserCardInnerDIV = styled.div`
           display: none;
         }
         &:after {
-        color: ${theme.colors.lightGrey};
+        color: ${theme.colors.accentDark};
         content: "•";
         padding-left: 1rem;
       }
@@ -195,18 +200,19 @@ const TeaserCardInnerDIV = styled.div`
   
 `;
 
-const TeaserCard = ({name, href, image, tags, stack}) => {
+const TeaserCard = ({name, description, href, image, tags, stack}) => {
     const [hovered, setHovered] = useState(false);
     return (
-      <TeaserCardDIV onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
-        <a href={href} target="blank">
+      <TeaserCardDIV>
+        <a href={href} target="blank" onMouseOver={() => setHovered(true)} onMouseOut={() => setHovered(false)}>
         <TeaserCardInnerDIV hovered={hovered}>
-            <figure className="teaser-card-image">
-                <SiteImage src={image} alt={name}/>
-            </figure>
+              <Image className="teaser-card-image" src={image} alt={name} width={360} height={203}/>
               <div className="teaser-card-name">  
                 <h3>{name}</h3>
                 <span className="visit-text">Visit</span>
+              </div>
+              <div className="teaser-card-description">
+                <p>{description}</p>
               </div>
               <div className="teaser-card-tags">
                   {tags.map((tag, i) => (

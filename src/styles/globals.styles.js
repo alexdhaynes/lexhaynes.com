@@ -8,7 +8,8 @@ export const theme = {
     colors: {
       black: '#333333',
       darkGrey: '#584848',
-      lightGrey: '#b39090',
+      accent: 'rgb(225 203 156 / 25%)',
+      accentDark: '#d59b1e',
       defaultGrey: '#666',
     }
   }

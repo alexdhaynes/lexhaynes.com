@@ -3,8 +3,9 @@
     "name": "In The Works",
     "href": "https://intheworks.helpscout.com",
     "image": "/images/portfolio/itw.png",
+    "description": "A lovingly-crafted founder-focused blog by Help Scout.",
     "tags": [
-      "Contributor"
+      "Co-Maintainer"
     ],
     "stack": [
       "Gatsby",
@@ -17,10 +18,11 @@
   },
   {
     "name": "Help Scout Marketing Site",
+    "description": "The marketing site for Help Scout.",
     "href": "https://www.helpscout.com",
     "image": "/images/portfolio/helpscout.png",
     "tags": [
-      "Contributor"
+      "Co-Maintainer"
     ],
     "stack": [
       "Gatsby",
@@ -29,6 +31,21 @@
       "Styled Components"
     ],
     "caseStudyId": "hs"
+  },
+  {
+    "name": "Conditional Fields Feature",
+    "description": "An experimental feature addition to Contentful's default entry editor.",
+    "href": "https://github.com/alexhayneshs/contentful-conditional-fields-demo",
+    "image": "/images/portfolio/contentful-demo.png",
+    "tags": [
+      "Demo",
+      "Contentful API"
+    ],
+    "stack": [
+      "TypeScript",
+      "React",
+      "Contentful API"
+    ]
   },
   {
     "name": "Augmented Reality Prototype",

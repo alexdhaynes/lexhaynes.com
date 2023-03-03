@@ -1,13 +1,13 @@
 import { useState } from "react"
+import Image from 'next/image'
+
 // components
 import { TeaserCard } from "../components/TeaserCard";
 import AppShell from "../components/AppShell";
-import SiteImage from "../components/SiteImage";
 import useScrollPosition from "../hooks/useScrollPosition"; 
 
 import portfolioData from "../data/portfolio.json";
 import socialData from "../data/social.json";
-import skillsData from "../data/skills.json";
 
 //css
 import styled, { css } from 'styled-components'
@@ -20,7 +20,7 @@ const defaultTextLinkStyle = css`
     color: ${theme.colors.darkGrey};
     position: relative;
     &:hover, &:focus, &:active {
-      color: ${theme.colors.lightGrey};
+      color: ${theme.colors.accentDark};
     }
 `
 
@@ -50,7 +50,7 @@ const pageStyle = css`
 `
 
 const SidebarASIDE = styled.aside`
-  background: #fafafa;
+  background: ${theme.colors.accent};
   grid-area: sidebar;
   padding: 30px;
   height: 100%;
@@ -61,17 +61,13 @@ const SidebarASIDE = styled.aside`
 
   .sidebar-content {
     h1 {
-    font-size: 4rem;
-    line-height: 4.25rem;
+      font-size: 4rem;
+      line-height: 4.25rem;
+      margin-bottom: 0;
     }
     h2 {
       font-weight: 500;
     }
-
-    img {
-      border-radius: 6px;
-    }
-
   }
 `
 
@@ -86,7 +82,7 @@ const MainAreaDIV = styled.div`
   }
 
   ${MEDIA_QUERIES.XL} {
-    padding: 90px 0 0 160px;
+    padding: 90px 0 0 6vw;
     ul {
       padding-left: 2rem;
     }
@@ -120,8 +116,14 @@ const ProjectGridDIV = styled.div`
 const ProfilePicDIV = styled.div`
   width:150px;
   height:150px;
-  margin: 20px 0;
+  margin: 20px 0 30px 0;
   position: relative;
+  img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+  }
 `;
 
 const DelightDIV = styled.div`
@@ -163,7 +165,7 @@ const DelightDIV = styled.div`
 
 const SkillsDIV = styled.div`
   margin-bottom: 40px;
-  background: #fafafa;
+  background: ${theme.colors.accent};
   padding: 10px 20px 20px 20px;
   margin-bottom: 40px;
   display: block;
@@ -190,7 +192,7 @@ const SkillsDIV = styled.div`
         display: inline;
         
         &:after {
-          color: ${theme.colors.lightGrey};
+          color: ${theme.colors.accentDark};
           content: "•";
           padding-left: 1rem;
         }
@@ -223,8 +225,6 @@ const Home = () => {
   }, [scrollPos])
 
 
- 
-
   return (
     <AppShell title="Alex Haynes: Front-End Developer">
 
@@ -239,9 +239,11 @@ const Home = () => {
               <h2>Front End Developer</h2>
                       
               <ProfilePicDIV>
-                <SiteImage
+                <Image
                   src="/images/jpgs/profile.jpg"
                   alt="Alexandra Haynes: Profile Picture"
+                  width={200} 
+                  height={161}
                 />
               </ProfilePicDIV>
               <p>
@@ -279,42 +281,37 @@ const Home = () => {
                 I’m a creative Front-End Developer who builds delightful experiences for the web.
               </p>
 
-              <h3>At Work</h3>
+              <h3>At work</h3>
               <ul>
                 <li>Maintain, improve, and document codebases</li>
-                <li>Explain technical things to non-technical people (nicely)</li>
-                <li>Build components, landing pages, and websites from specs</li>
+                <li>Collaborate with design and marketing teams to build apps, components, landing pages, CMS features, and websites</li>
                 <li>Write code that future developers (and future me) will understand</li>
                 <li>Think a lot about naming things</li>
                 <li>Iterate!</li>
             </ul>
 
-            <h3> Outside of Work</h3>
+            <h3> Outside of work</h3>
               <p>
-                I like to hike, explore the forest 🌲, make stuff out of wood, draw, learn new things, and work on my meditation practice. I enjoy tea 🍵 and tea brewing. 
+                I like to hike, explore the forests and gorges 🌲, play banjo 🪕, bake sourdough 🥖, make stuff out of wood 🔨, draw, learn new things, and work on my meditation practice. I enjoy tea 🍵 and tea brewing. 
               </p>
-            </TextBlock>
-          </Section>
 
-            {/* ABOUT SECTION */}
-            <Section>
-            <SectionHeader>What I care about</SectionHeader>
-              <TextBlock>
-                <p>
-                  I’m passionate about living in a way that does no harm to living
-                  beings, and no harm to the environment.
+              <h3> What I care about</h3>
+              <p>
+                  I’m passionate about living in a way that does no harm to sentient
+                  beings, and no harm to the environment. I care deeply about living in harmony and communion with the land and local ecosystems.
                 </p>
-              </TextBlock>
+            </TextBlock>
           </Section>
           
           {/* PORTFOLIO SECTION */}
           <Section id="portfolio">
-            <SectionHeader>Featured projects</SectionHeader>
+            <SectionHeader>Featured work</SectionHeader>
             <ProjectGridDIV>
               {portfolioData.map(node => {
                 return <TeaserCard
                       key={`Project-${node.name}`}
                       name={node.name}
+                      description={node.description}
                       stack={node.stack}
                       href={node.href}
                       image={node.image}
@@ -324,21 +321,6 @@ const Home = () => {
                 })}
               </ProjectGridDIV>
               
-          </Section>
-
-          {/* SKILLS SECTION */}
-          <Section id="skills">
-            <SectionHeader>My daily toolkit</SectionHeader>
-              {skillsData.map(node => (
-                <SkillsDIV key={`list-${node.title}`}>
-                  <h4>{node.title}</h4>
-                  <ul>
-                  {node.list.map((item, i) => (
-                      <li key={`skill-${i}`}>{item.label}</li>
-                  ))} 
-                  </ul>
-                </SkillsDIV>
-              ))}
           </Section>
 
         </MainAreaDIV>
