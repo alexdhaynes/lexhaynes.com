@@ -263,7 +263,7 @@ const Home = () => {
               </p>
        
 
-              <p>Front End Dev @ <a href="https://www.helpscout.com" className="underline">Help Scout</a></p>
+              <p>Front-End Dev @ <a href="https://www.helpscout.com" className="underline">Help Scout</a></p>
               <p>📍 Ithaca, NY</p>
           </div>
               
