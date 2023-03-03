@@ -236,7 +236,7 @@ const Home = () => {
             <h1>
                 Alex Haynes
               </h1>
-              <h2>Front End Developer</h2>
+              <h2>Front-End Developer</h2>
                       
               <ProfilePicDIV>
                 <Image
