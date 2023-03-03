@@ -49,6 +49,7 @@
   },
   {
     "name": "Augmented Reality Prototype",
+    "description": "A jaunt into augmented reality! Camera access required to view.",
     "href": "https://ar-mardi-gras-mask.netlify.app/",
     "image": "/images/portfolio/ar-mask.jpg",
     "tags": [

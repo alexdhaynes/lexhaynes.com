@@ -292,13 +292,12 @@ const Home = () => {
 
             <h3> Outside of work</h3>
               <p>
-                I like to hike, explore the forests and gorges 🌲, play banjo 🪕, bake sourdough 🥖, make stuff out of wood 🔨, draw, learn new things, and work on my meditation practice. I enjoy tea 🍵 and tea brewing. 
+                I like to hike, explore the forests and gorges 🌲, play banjo 🪕, bake sourdough from locally milled and grown wheat 🥖, make stuff out of wood 🔨, draw, learn new things, and work on my meditation practice. I enjoy tea 🍵 and tea brewing. 
               </p>
 
               <h3> What I care about</h3>
               <p>
-                  I’m passionate about living in a way that does no harm to sentient
-                  beings, and no harm to the environment. I care deeply about living in harmony and communion with the land and local ecosystems.
+                  I’m passionate about living in a way that does no harm to beings or the environment. I care deeply about living in harmony and communion with the land and local ecosystems.
                 </p>
             </TextBlock>
           </Section>
