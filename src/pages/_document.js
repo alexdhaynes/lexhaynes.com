@@ -40,7 +40,7 @@ class CustomDocument extends Document {
           />
           <meta
             property="title"
-            content="Alex Haynes: Front End Developer"
+            content="Alex Haynes: Front-End Developer"
           />
           <meta
             property="description"
@@ -48,7 +48,7 @@ class CustomDocument extends Document {
           />
           <meta
             property="og:title"
-            content="Alex Haynes: Front End Developer"
+            content="Alex Haynes: Front End-Developer"
           />
           <meta property="og:type" content="website" />
           <meta

@@ -34,7 +34,7 @@
   },
   {
     "name": "Conditional Fields Feature",
-    "description": "An experimental feature addition to Contentful's default entry editor.",
+    "description": "A proof-of-concept feature for Contentful's default entry editor.",
     "href": "https://github.com/alexhayneshs/contentful-conditional-fields-demo",
     "image": "/images/portfolio/contentful-demo.png",
     "tags": [
