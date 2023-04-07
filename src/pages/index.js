@@ -236,7 +236,7 @@ const Home = () => {
             <h1>
                 Alex Haynes
               </h1>
-              <h2>Front-End Developer</h2>
+              <h2>Senior Front-End Developer</h2>
                       
               <ProfilePicDIV>
                 <Image
@@ -263,7 +263,7 @@ const Home = () => {
               </p>
        
 
-              <p>Front-End Dev @ <a href="https://www.helpscout.com" className="underline">Help Scout</a></p>
+              <p>Senior Front-End Dev @ <a href="https://www.helpscout.com" className="underline">Help Scout</a></p>
               <p>📍 Ithaca, NY</p>
           </div>
               
