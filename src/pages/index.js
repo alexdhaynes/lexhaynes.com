@@ -29,15 +29,9 @@ const pageStyle = css`
 
   ${MEDIA_QUERIES.XL} {
     display: grid;
-    grid-template-columns: minmax(auto, 500px) 3fr;
+    grid-template-columns: minmax(200px, 1fr) minmax(400px, 2fr);
     grid-template-areas:
       "sidebar main";
-  }
-
-  @media (min-width: 1380px) {
-    aside {
-        position: fixed; 
-      }
   }
 
   p, li, a, div {
@@ -52,11 +46,12 @@ const pageStyle = css`
 const SidebarASIDE = styled.aside`
   background: ${theme.colors.accent};
   grid-area: sidebar;
-  padding: 30px;
+  padding: 60px 80px;
   height: 100%;
 
   ${MEDIA_QUERIES.XL} {
-    padding: 67px 80px 0 80px;
+    position: fixed;
+    padding: 60px;
   }
 
   .sidebar-content {
@@ -74,18 +69,26 @@ const SidebarASIDE = styled.aside`
 const MainAreaDIV = styled.div`
   grid-area: main;
   overflow-x: hidden;
-
-  padding: 40px;
+  padding: 60px 80px;
 
   ul {
     padding-left: 1rem;
   }
 
   ${MEDIA_QUERIES.XL} {
-    padding: 90px 0 0 6vw;
+    padding: 60px 50px 30px 30px;
+    width: 75%;
+    justify-self: flex-end;
     ul {
       padding-left: 2rem;
     }
+  }
+
+  @media (min-width: 1450px) {
+    justify-self: center;
+  }
+  @media (min-width: 1850px) {
+    justify-self: flex-start;
   }
 `
 
