@@ -29,7 +29,7 @@ const pageStyle = css`
 
   ${MEDIA_QUERIES.XL} {
     display: grid;
-    grid-template-columns: minmax(200px, 1fr) minmax(400px, 2fr);
+    grid-template-columns: 560px auto;
     grid-template-areas:
       "sidebar main";
   }
@@ -49,11 +49,6 @@ const SidebarASIDE = styled.aside`
   padding: 60px 80px;
   height: 100%;
 
-  ${MEDIA_QUERIES.XL} {
-    position: fixed;
-    padding: 60px;
-  }
-
   .sidebar-content {
     h1 {
       font-size: 4rem;
@@ -64,6 +59,17 @@ const SidebarASIDE = styled.aside`
       font-weight: 500;
     }
   }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+      a {
+        ${defaultTextLinkStyle}
+      }
+    }
+  }
 `
 
 const MainAreaDIV = styled.div`
@@ -71,24 +77,9 @@ const MainAreaDIV = styled.div`
   overflow-x: hidden;
   padding: 60px 80px;
 
-  ul {
-    padding-left: 1rem;
-  }
 
   ${MEDIA_QUERIES.XL} {
-    padding: 60px 50px 30px 30px;
-    width: 75%;
-    justify-self: flex-end;
-    ul {
-      padding-left: 2rem;
-    }
-  }
-
-  @media (min-width: 1450px) {
-    justify-self: center;
-  }
-  @media (min-width: 1850px) {
-    justify-self: flex-start;
+    padding-left: 120px;
   }
 `
 
@@ -100,7 +91,7 @@ const TextBlock = styled.article`
 
 const Section = styled.section`
   position:relative;
-  margin: 0 auto 6rem auto;
+  margin: 0 auto 80px auto;
 `;
 
 const SectionHeader = styled.h2`
@@ -166,55 +157,6 @@ const DelightDIV = styled.div`
   
 `;
 
-const SkillsDIV = styled.div`
-  margin-bottom: 40px;
-  background: ${theme.colors.accent};
-  padding: 10px 20px 20px 20px;
-  margin-bottom: 40px;
-  display: block;
-  border-radius: 8px;
-
-  ${MEDIA_QUERIES.XL} {
-    width: 90%;
-    max-width:700px;
-  }
-
-  h4 {
-    font-size: 1.5rem;
-    line-height: 0;
-    font-weight: 700;
-  }
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: inline;
-
-    ${MEDIA_QUERIES.L} {
-      li {
-        display: inline;
-        
-        &:after {
-          color: ${theme.colors.accentDark};
-          content: "•";
-          padding-left: 1rem;
-        }
-        &:last-of-type {
-          &:after {
-            content: '';
-          }
-          }/* end last-of-type */
-      }
-    }
-   
-    li {
-      padding-right: 1.25rem;
-      
-    }
-  }
-`;
-
-
 
 const Home = () => {
   const scrollPos = useScrollPosition();
@@ -265,8 +207,14 @@ const Home = () => {
                 ))}
               </p>
        
-
-              <p>Senior Front-End Dev @ <a href="https://www.helpscout.com" className="underline">Help Scout</a></p>
+              <ul>
+                <li>
+                <strong>Senior Front-End Dev</strong> @ <a href="https://www.helpscout.com" className="underline">Help Scout</a>
+                </li>
+                <li>
+                <strong>Mathematics student</strong> at Indiana University East
+                </li>
+              </ul>   
               <p>📍 Ithaca, NY</p>
           </div>
               
@@ -291,11 +239,14 @@ const Home = () => {
                 <li>Write code that future developers (and future me) will understand</li>
                 <li>Think a lot about naming things</li>
                 <li>Iterate!</li>
-            </ul>
+              </ul>
+            
+              <h3>My Studies</h3>
+              <p>I'm currently pursuing a B.S. in Mathematics! My first B.A. was in French Literature. This semester I'm taking Linear Algebra, Calculus II, and Data Structures (FINALLY). I've spent so much of my life fearing math, but it turns out -- math is just like any other skill. Understanding follows effort!</p>
 
             <h3> Outside of work</h3>
               <p>
-                I like to hike, explore the forests and gorges 🌲, play banjo 🪕, bake sourdough from locally milled and grown wheat 🥖, make stuff out of wood 🔨, draw, learn new things, and work on my meditation practice. I enjoy tea 🍵 and tea brewing. 
+                I like to hike, explore the forests and gorges 🌲, play banjo 🪕, make stuff out of wood 🔨, draw, learn new things, and work on my meditation practice. I enjoy tea 🍵 and tea brewing. 
               </p>
 
               <h3> What I care about</h3>
