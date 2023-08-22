@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Footer from "../components/Footer";
+import Footer from "./Footer";
 
 const AppShell = ({ title, children }) => {
   return (
@@ -7,9 +7,7 @@ const AppShell = ({ title, children }) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
       <Footer />
     </>
   );
