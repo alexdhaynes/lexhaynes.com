@@ -1,3 +1,4 @@
+import styled, { css } from "styled-components";
 import { useState } from "react";
 import Image from "next/image";
 
@@ -10,7 +11,6 @@ import portfolioData from "../data/portfolio.json";
 import socialData from "../data/social.json";
 
 //css
-import styled, { css } from "styled-components";
 import { MEDIA_QUERIES } from "../constants";
 import { theme } from "../styles/globals.styles";
 import { useEffect } from "react";
@@ -26,7 +26,7 @@ const defaultTextLinkStyle = css`
   }
 `;
 
-const pageStyle = css`
+const PageStyle = styled.div`
   color: #222;
 
   ${MEDIA_QUERIES.XL} {
@@ -172,7 +172,7 @@ const Home = () => {
 
   return (
     <AppShell title="Alex Haynes: Front-End Developer">
-      <div css={pageStyle}>
+      <PageStyle>
         {/* SIDEBAR SECTION */}
         <SidebarASIDE>
           <div className="sidebar-content">
@@ -292,7 +292,7 @@ const Home = () => {
         <DelightDIV scrolled={scrolled}>
           <p>focus on the breath.</p>
         </DelightDIV>
-      </div>
+      </PageStyle>
     </AppShell>
   );
 };
