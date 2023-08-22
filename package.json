@@ -1,6 +1,11 @@
 {
   "name": "alex_haynes_portfolio_2021",
   "version": "0.1.0",
+
+  "engines": {
+    "node": "18.14.0"
+  },
+
   "private": true,
   "scripts": {
     "dev": "next dev",
