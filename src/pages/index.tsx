@@ -246,10 +246,7 @@ const Home = () => {
               <h3>My Studies</h3>
               <p>
                 I'm currently pursuing a B.S. in Mathematics! My first B.A. was
-                in French Literature. This semester I'm taking Linear Algebra,
-                Calculus II, and Data Structures (FINALLY). I've spent so much
-                of my life fearing math, but it turns out -- math is just like
-                any other skill. Understanding follows effort!
+                in French Literature.
               </p>
 
               <h3> Outside of work</h3>
