@@ -260,7 +260,7 @@ const Home = () => {
               <p>
                 I like to hike, explore the forests and gorges 🌲, play banjo
                 🪕, make stuff out of wood 🔨, draw, read everything there is to read about whatever my latest intellectual fixation is, learn new things, and work
-                on my meditation practice. I am <strong>obsessed</strong> with tea (particularly wild mountain oolongs) 🍵 and tea brewing (particularly in clay pots).
+                on my meditation practice. I am <strong>obsessed</strong> with tea (particularly wild mountain oolongs) 🍵 and tea brewing (one clay pot, one gaiwan, two kyusus!).
               </p>
 
               <h3> What I care about</h3>
