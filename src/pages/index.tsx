@@ -224,7 +224,7 @@ const Home = () => {
               <p>
               It feels very nice* to take a step away from the Wheel of Capitalism, if only for a little while.
               </p>
-              <p>*And by "nice" I mean the happiest I've felt in like a decade?</p>
+              <p>*And by "nice" I mean the happiest and I've felt in like a decade?</p>
 
               <h3>My studies</h3>
               <p>
