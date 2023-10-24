@@ -5,7 +5,7 @@
     "image": "/images/portfolio/itw.png",
     "description": "A lovingly-crafted founder-focused blog by Help Scout.",
     "tags": [
-      "Co-Maintainer"
+      "Co-developer"
     ],
     "stack": [
       "Gatsby",
@@ -22,7 +22,7 @@
     "href": "https://www.helpscout.com",
     "image": "/images/portfolio/helpscout.png",
     "tags": [
-      "Co-Maintainer"
+      "Former maintainer"
     ],
     "stack": [
       "Gatsby",
@@ -35,7 +35,7 @@
   {
     "name": "Conditional Fields Feature",
     "description": "A proof-of-concept feature for Contentful's default entry editor.",
-    "href": "https://github.com/alexhayneshs/contentful-conditional-fields-demo",
+    "href": "https://github.com/alexdhaynes/contentful-conditional-fields-demo",
     "image": "/images/portfolio/contentful-demo.png",
     "tags": [
       "Demo",

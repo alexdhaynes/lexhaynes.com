@@ -55,11 +55,11 @@ const SidebarASIDE = styled.aside`
 
   .sidebar-content {
     h1 {
-      font-size: 4rem;
-      line-height: 4.25rem;
+      font-size: 3rem;
+      line-height: 1rem;
       margin-bottom: 0;
     }
-    h2 {
+    h2, h3, h4 {
       font-weight: 500;
     }
   }
@@ -177,7 +177,7 @@ const Home = () => {
         <SidebarASIDE>
           <div className="sidebar-content">
             <h1>Alex Haynes</h1>
-            <h2>Senior Front-End Developer</h2>
+            <h4>Math student && Front-end Developer</h4>
 
             <ProfilePicDIV>
               <Image
@@ -204,12 +204,6 @@ const Home = () => {
 
             <ul>
               <li>
-                <strong>Senior Front-End Dev</strong> @{" "}
-                <a href="https://www.helpscout.com" className="underline">
-                  Help Scout
-                </a>
-              </li>
-              <li>
                 <strong>Mathematics student</strong> at Indiana University East
               </li>
             </ul>
@@ -224,17 +218,34 @@ const Home = () => {
 
             <TextBlock>
               <p>
-                I’m a creative Front-End Developer who builds delightful
-                experiences for the web.
+                I’m a creative Front-end Developer who builds delightful
+                experiences for the web. After over a decade of experience in front-end web development, I have returned to school to study math full-time. 
               </p>
+              <p>
+              It feels very nice to take a step away from the Wheel of Capitalism, if only for a little while.
+              </p>
+
+              <h3>My studies</h3>
+              <p>
+                I'm currently pursuing a B.S. in Mathematics! My first B.A. was
+                in French Literature, during which time I took exactly 0 math classes. After years of math aversion, something flipped in my brain 🧠 💡. Now I spend all my time doing math and I love it! <br />∬ 🥰
+              </p>
+
+              <h3>Mathematical awakening 🤯</h3>
+              <p>
+                After a decade of front-end tool-hopping, learning the math which underlines so much of Computer Science is blowing my mind.
+              </p>
+
+              <h3>Front-end street cred</h3>
+              <p>I have been a front-end web developer for over a decade, and started building rudimentary HTML and JavaScript™️ websites in the 7th grade (2003).</p>
+              
 
               <h3>At work</h3>
               <ul>
                 <li>Maintain, improve, and document codebases</li>
                 <li>
-                  Collaborate with design and marketing teams to build apps,
-                  components, landing pages, CMS features, and websites
-                </li>
+                  Collaborate with diverse teams to build web apps, websites, and content-management solutions.              
+                   </li>
                 <li>
                   Write code that future developers (and future me) will
                   understand
@@ -243,24 +254,20 @@ const Home = () => {
                 <li>Iterate!</li>
               </ul>
 
-              <h3>My Studies</h3>
-              <p>
-                I'm currently pursuing a B.S. in Mathematics! My first B.A. was
-                in French Literature.
-              </p>
+         
 
               <h3> Outside of work</h3>
               <p>
                 I like to hike, explore the forests and gorges 🌲, play banjo
-                🪕, make stuff out of wood 🔨, draw, learn new things, and work
-                on my meditation practice. I enjoy tea 🍵 and tea brewing.
+                🪕, make stuff out of wood 🔨, draw, read everything there is to read about whatever my latest intellectual fixation is, learn new things, and work
+                on my meditation practice. I am <strong>obsessed</strong> with tea (particularly wild mountain oolongs) 🍵 and tea brewing (particularly in clay pots).
               </p>
 
               <h3> What I care about</h3>
               <p>
                 I’m passionate about living in a way that does no harm to beings
                 or the environment. I care deeply about living in harmony and
-                communion with the land and local ecosystems.
+                communion with the land and local ecosystems. My guiding forces are compassion and harmlessness to all sentient beings.
               </p>
             </TextBlock>
           </Section>
