@@ -225,9 +225,8 @@ const Home = () => {
                 experiences for the web. After over a decade of experience in front-end web development, I have returned to school to study math full-time. 
               </p>
               <p>
-              It feels very nice* to take a step away from the Wheel of Capitalism, if only for a little while.
+              It feels very nice to take a step away from the Wheel of Capitalism, if only for a little while.
               </p>
-              <p>*And by "nice" I mean the happiest and I've felt in like a decade?</p>
 
               <h3>My studies</h3>
               <p>
