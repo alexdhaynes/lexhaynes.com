@@ -234,7 +234,7 @@ const Home = () => {
 
               <h3>Mathematical awakening 🤯</h3>
               <p>
-                After a decade of front-end tool-hopping, learning the math which underlines so much of Computer Science is blowing my mind.
+                After a decade of front-end tool-hopping, learning the math which underlies so much of Computer Science is blowing my mind. What is CS but applied math? 🥊 🧐
               </p>
 
               <h3>Front-end street cred</h3>
