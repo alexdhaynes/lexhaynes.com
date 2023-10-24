@@ -56,11 +56,14 @@ const SidebarASIDE = styled.aside`
   .sidebar-content {
     h1 {
       font-size: 3rem;
-      line-height: 1rem;
+      line-height: 3.5rem;
       margin-bottom: 0;
     }
     h2, h3, h4 {
       font-weight: 500;
+    }
+    h4 {
+      margin-top: 1rem;
     }
   }
 
