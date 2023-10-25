@@ -30,7 +30,7 @@ const TeaserCardDIV = styled.div`
 
 const visitTextHoverStyle = css`
   opacity: 1 !important;
-  transform: translateX(20px);
+  transform: translateX(40px);
 `;
 
 const TeaserCardInnerDIV = styled.div`
@@ -40,17 +40,12 @@ const TeaserCardInnerDIV = styled.div`
   ${(props) => {
     if (props.hovered) {
       return css`
-        filter: brightness(80%);
-        transition: filter 0.25s;
-
-        @media (min-width: 1500px) {
-          .teaser-card-name {
-            .visit-text {
-              ${visitTextHoverStyle}
-            }
+          .teaser-card-image {
+            filter: brightness(80%);
+            transition: filter 0.25s;
           }
-        }
-      `;
+        
+       `;
     }
   }}
 
@@ -106,19 +101,6 @@ const TeaserCardInnerDIV = styled.div`
 
     h3 {
       margin: 0;
-    }
-    .visit-text {
-      margin-left: 20px;
-      color: ${theme.colors.accentDark};
-      font-size: 1.15rem;
-      position: absolute;
-      right: 0;
-      top: 0;
-      opacity: 0;
-      transition: transform 0.15s ease-in-out, opacity 0.1s;
-      &:after {
-        content: " >>";
-      }
     }
   }
 
@@ -213,7 +195,6 @@ const TeaserCard = ({ name, description, href, image, tags, stack }) => {
           />
           <div className="teaser-card-name">
             <h3>{name}</h3>
-            <span className="visit-text">Visit</span>
           </div>
           <div className="teaser-card-description">
             <p>{description}</p>
