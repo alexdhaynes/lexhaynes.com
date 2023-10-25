@@ -139,15 +139,10 @@ const ProfilePicDIV = styled.div`
 
 const DelightDIV = styled.div`
   ${(props) => {
-    if (props.scrolled > 20) {
+    if (props.scrolled > 30) {
       return css`
-        background: rgb(255, 255, 255);
-        background: linear-gradient(
-          90deg,
-          rgba(255, 255, 255, 0) 0%,
-          rgba(255, 255, 255, 1) 48%,
-          rgba(255, 255, 255, 0) 100%
-        );
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 5%, rgba(255,255,255,1) 95%);
       `;
     }
   }}
