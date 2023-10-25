@@ -50,10 +50,20 @@ const PageStyle = styled.div`
 const SidebarASIDE = styled.aside`
   background: ${theme.colors.accent};
   grid-area: sidebar;
-  padding: 74px 80px;
   height: 100%;
+  padding: 30px 40px;
+
+  ${MEDIA_QUERIES.L} {
+    padding: 74px 80px;
+  }
 
   .sidebar-content {
+
+    ${MEDIA_QUERIES.XL} {
+      position: fixed;
+      width: 400px;
+    }
+
     h1 {
       font-size: 3rem;
       line-height: 3.5rem;
@@ -82,7 +92,11 @@ const SidebarASIDE = styled.aside`
 const MainAreaDIV = styled.div`
   grid-area: main;
   overflow-x: hidden;
-  padding: 60px 80px;
+  padding: 30px 40px;
+
+  ${MEDIA_QUERIES.L} {
+    padding: 60px 80px;
+  }
 
   ${MEDIA_QUERIES.XL} {
     padding-left: 120px;
@@ -180,7 +194,7 @@ const Home = () => {
         <SidebarASIDE>
           <div className="sidebar-content">
             <h1>Alex Haynes</h1>
-            <h4>Math student && Front-end Developer</h4>
+            <h4>Math Student <strong>&&</strong> Front-end Developer</h4>
 
             <ProfilePicDIV>
               <Image
